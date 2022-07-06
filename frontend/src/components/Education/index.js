@@ -41,7 +41,7 @@ export default function Education() {
             title="Epitech Toulouse - France"
             subtitle="Low Level Programming"
             body="The first year at epitech mainly focusses at building a deep technical foundation for the following years to come.
-            **blablabla TODO**"
+            **blablabla TODO****blablabla TODO****blablabla TODO****blablabla TODO****blablabla TODO****blablabla TODO****blablabla TODO****blablabla TODO****blablabla TODO****blablabla TODO****blablabla TODO****blablabla TODO****blablabla TODO****blablabla TODO****blablabla TODO****blablabla TODO****blablabla TODO****blablabla TODO****blablabla TODO****blablabla TODO****blablabla TODO****blablabla TODO****blablabla TODO****blablabla TODO****blablabla TODO****blablabla TODO****blablabla TODO****blablabla TODO**"
             logoTitle="1st Year"
           />
           <YearObject
