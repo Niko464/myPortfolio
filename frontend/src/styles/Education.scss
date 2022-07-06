@@ -1,0 +1,108 @@
+@import url("variables.css");
+
+.education-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    "y1-txt y1-logo"
+    "y2-logo y2-txt"
+    "y3-txt y3-logo"
+    "y4-logo y4-txt"
+    "y5-txt y5-logo";
+
+  /* background-color: rgba(255, 0, 0, 0.2); */
+}
+
+@media screen and (max-width: 1000px) {
+  .education-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-areas:
+      "y1-logo"
+      "y1-txt"
+      "y2-logo"
+      "y2-txt"
+      "y3-logo"
+      "y3-txt"
+      "y4-logo"
+      "y4-txt"
+      "y5-logo"
+      "y5-txt";
+  }
+}
+
+.idx {
+  color: white;
+}
+
+.text-container {
+  color: white;
+  // background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding: 2em 2em;
+
+  .title {
+    color: var(--clr-title-1);
+    margin-bottom: .5em;
+  }
+
+  .subtitle {
+    color: var(--clr-subtitle-1);
+    font-size: 1.3em;
+    margin-bottom: .5em;
+  }
+
+  .body {
+    color: var(--clr-body-1);
+    text-align: center;
+  }
+}
+
+.hex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5rem 0 5rem 0;
+  font-size: 1.5em;
+
+  /* background-color: rgba(255, 0, 0, .2); */
+}
+
+#year-1-txt {
+  grid-area: y1-txt;
+}
+#year-2-txt {
+  grid-area: y2-txt;
+}
+#year-3-txt {
+  grid-area: y3-txt;
+}
+#year-4-txt {
+  grid-area: y4-txt;
+}
+#year-5-txt {
+  grid-area: y5-txt;
+}
+
+#year-1-logo {
+  grid-area: y1-logo;
+}
+#year-2-logo {
+  grid-area: y2-logo;
+}
+#year-3-logo {
+  grid-area: y3-logo;
+}
+#year-4-logo {
+  grid-area: y4-logo;
+}
+#year-5-logo {
+  grid-area: y5-logo;
+}

@@ -1,0 +1,124 @@
+@import url("variables.css");
+
+.star-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -5;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  /* overflow-x: hidden; */
+  /* overflow-y: hidden; */
+}
+
+.star {
+  position: relative;
+  transform-origin: right;
+  animation: randomize linear infinite;
+  animation-duration: 16s;
+}
+
+.star:nth-child(even) {
+  animation: randomize-rev linear infinite;
+  transform-origin: left;
+  animation-duration: 24s;
+}
+
+@keyframes randomize {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes randomize-rev {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.star span {
+  position: absolute;
+
+  top: calc(4vw * var(--i));
+  left: calc(4vw * var(--i));
+  bottom: calc(4vw * var(--i));
+  right: calc(4vw * var(--i));
+
+  width: 10px;
+  height: 10px;
+}
+
+.star span::before {
+  content: "";
+  position: absolute;
+  left: -5rem;
+  border-radius: 50%;
+
+  width: 20px;
+  height: 20px;
+  /* background: rgba(195 50 217 / 1);
+  box-shadow:
+    0 0 20px rgba(195 50 217 / 1),
+    0 0 30px rgba(195 50 217 / 1),
+    0 0 40px rgba(195 50 217 / 1),
+    0 0 60px rgba(195 50 217 / 1),
+    0 0 80px rgba(195 50 217 / 1),
+    0 0 0 8px rgba(195 50 217 / .1);  */
+
+  /*195 50 217
+    92 98 242
+  */
+  --clr: 195 50 217;
+  background-color: rgb(var(--clr));
+  box-shadow:
+    0 0 20px rgba(var(--clr) / 1),
+    0 0 40px rgba(var(--clr) / 1),
+    0 0 60px rgba(var(--clr) / 1),
+    0 0 80px rgba(var(--clr) / 1),
+    0 0 0 8px rgba(var(--clr) / 0.1);
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-rev {
+  0% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.star span:nth-child(3n + 1) {
+  animation: animate 20s infinite alternate;
+}
+
+.star span:nth-child(3n + 3) {
+  animation: animate-rev 10s infinite alternate;
+}
+
+.star span:nth-child(3n + 2) {
+  animation: animate 14s infinite alternate;
+}

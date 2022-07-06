@@ -1,0 +1,11 @@
+.bg-image {
+  aspect-ratio: 3 / 2;
+  width: 100%;
+  background-repeat: no-repeat;
+  /* background-position: ; */
+  background-size: cover;
+}
+
+.bg-circle {
+  background-image: url('./bg-circles.svg');
+}

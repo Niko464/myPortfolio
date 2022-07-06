@@ -1,0 +1,134 @@
+@import url("../styles/variables.css");
+
+.card-container {
+  padding: 1.5rem;
+  background-color: var(--clr-neutral-600);
+  border-radius: 1rem;
+  z-index: 1;
+  margin: 1rem;
+}
+
+.card {
+  color: var(--clr-neutral-100);
+  background-size: cover;
+  width: 45ch;
+  height: 30ch;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  position: relative;
+  transition: transform 300ms ease-out;
+}
+
+.card:hover,
+.card:focus-within {
+  transform: scale(1.05);
+}
+
+.card-content {
+  --padding: 1.5rem;
+
+  padding: var(--padding);
+  background: linear-gradient(
+    hsl(0 0% 0% / 0),
+    hsl(0 0% 0% / 0.5) 15%,
+    hsl(0 0% 0% / 0.7)
+  );
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.card-title {
+  margin-bottom: 1.5rem;
+  position: relative;
+  width: max-content;
+}
+
+.card-title::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + var(--padding) + 1ch);
+  height: 4px;
+  background: var(--clr-accent-400);
+  bottom: -0.5rem;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  left: calc(var(--padding) * -1);
+}
+
+.card-body {
+  margin-bottom: 1rem;
+  color: rgb(255 255 255 / 0.8);
+}
+
+.button {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-accent-400);
+  text-transform: uppercase;
+  padding: 0.5em 1.25em;
+  font-family: "Outfit";
+  border-radius: 0.25rem;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--clr-accent-500);
+}
+
+@media (hover) {
+  .card-content {
+    transform: translateY(calc(100% - 4.5rem));
+    transition: transform 600ms ease-out;
+  }
+
+  .card:hover .card-content,
+  .card:focus-within .card-content {
+    transform: translateY(0);
+    transition-delay: 350ms;
+  }
+
+  .card:focus-within .card-content {
+    transition-duration: 0ms;
+  }
+
+  .card-content > *:not(.card-title) {
+    opacity: 0;
+    transition: opacity 600ms ease-out;
+  }
+
+  .card:hover .card-content > *,
+  .card:focus-within .card-content > * {
+    opacity: 1;
+    transition-delay: 800ms;
+  }
+
+  .card:focus-within .card-content > * {
+    transition-delay: 0ms;
+  }
+
+  .card:hover .card-title::after,
+  .card:focus-within .card-title::after {
+    transform: scaleX(1);
+  }
+
+  .card-title::after {
+    transform: scaleX(0);
+    transform-origin: 0;
+    transition: transform 500ms ease-out;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 1ms !important;
+    scroll-behavior: auto !important;
+    transition-delay: 1ms !important;
+  }
+}

@@ -1,0 +1,137 @@
+@import url("variables.css");
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-container {
+  position: fixed;
+  width: 100%;
+  z-index: 15;
+  height: 3.75rem;
+  display: flex;
+  background-color: var(--clr-neutral-400);
+  transition: transform 300ms ease-in-out;
+
+  .logo {
+    font-weight: bold;
+    font-size: 1.125rem;
+    font-family: "Outfit";
+  }
+}
+
+nav ul {
+  .active {
+    font-weight: bold;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      border-radius: 5px;
+      background: linear-gradient(90deg, #fc03c2, #8403fc);
+      height: 0.3em;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1099px) {
+  .inner {
+    width: 90%;
+    margin: 0 auto;
+
+    nav {
+      top: 0;
+      right: 0;
+      position: absolute;
+      width: max(30vw, 15em);
+      height: 100vh;
+      background-color: var(--clr-neutral-400);
+      transform: translateX(150%);
+      transition: transform 500ms ease-out;
+      box-shadow: 0 0 50px 0px rgb(40, 40, 40);
+
+
+      ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+  
+        margin-top: 2.5em;
+        font-size: 1.5em;
+  
+        a {
+          display: block;
+          padding: .75em 1em;
+          font-family: "Outfit";
+          transition: all 500ms ease;
+        }
+      }
+    }
+
+    nav.open {
+      transform: translateX(0);
+    }
+
+    
+  }
+
+  .nav-close-btn {
+    color: white;
+    font-size: 1.5em;
+    padding: 0 1em;
+    width: 3em;
+    height: 3em;
+    right: 0;
+    top: 0;
+    position: absolute;
+  }
+}
+@media screen and (min-width: 1100px) {
+  
+
+  .inner {
+    width: 60%;
+    margin: 0 auto;
+
+    nav ul {
+      list-style: none;
+      display: flex;
+
+      li {
+        padding: 1em .25em;
+      }
+
+      a {
+        border-radius: 1rem;
+        padding: 1em 1.5em;
+        font-family: "Outfit";
+      }
+    }
+  }
+
+  .burger-icon {
+    display: none;
+  }
+
+  .nav-close-btn {
+    display: none;
+  }
+
+  .scroll-down .nav-container {
+    transform: translate3d(0, -100%, 0);
+  }
+  
+  .scroll-up .nav-container {
+    filter: drop-shadow(0 -10px 20px rgb(40, 40, 40));
+  }
+}

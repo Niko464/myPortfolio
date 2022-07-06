@@ -1,0 +1,67 @@
+@import url("variables.css");
+
+.hex {
+  --border-params: 1px solid var(--clr-accent-400);
+  --size: clamp(3em, 5vw, 50em);
+
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hex::before,
+.hex::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.hex,
+.hex::before,
+.hex::after {
+  width: calc(var(--size) * 1.732);
+  height: var(--size);
+  background-color: transparent;
+  border: var(--border-params);
+  border-bottom: transparent;
+  border-top: transparent;
+  border-image: linear-gradient(0deg, var(--clr-accent-400), #b7b4f0, var(--clr-accent-400));
+  border-image-slice: 1;
+}
+
+.hex::before {
+  transform: rotate(60deg);
+}
+
+.hex::after {
+  transform: rotate(-60deg);
+}
+
+.hex:nth-child(1) {
+  grid-row-start: 1;
+  grid-column-start: 2;
+}
+
+.hex:nth-child(2) {
+  grid-row-start: 2;
+  grid-column-start: 1;
+}
+
+.hex:nth-child(3) {
+  grid-row-start: 3;
+  grid-column-start: 2;
+}
+
+.hex:nth-child(4) {
+  grid-row-start: 4;
+  grid-column-start: 1;
+}
+
+.hex:nth-child(5) {
+  grid-row-start: 5;
+  grid-column-start: 2;
+}
