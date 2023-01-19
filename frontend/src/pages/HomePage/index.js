@@ -10,6 +10,7 @@ import Shit2 from "./secTestImg.png";
 
 import "../../styles/Backgrounds.css";
 import { useEffect } from "react";
+import Contact from "../../components/Contact";
 
 export default function HomePage() {
 
@@ -51,6 +52,9 @@ export default function HomePage() {
           />
         </div>
       </section>
+      <div id="contact-anchor" className="spacer" />
+      <Contact/>
+      
       <Footer />
     </div>
   );

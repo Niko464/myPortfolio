@@ -52,7 +52,7 @@ export default function HeroSection() {
             can still contact me ! Maybe it's time for me to learn it ? Who
             knows ?
           </p>
-          <a href="/" className={addRandomSlide("cta-btn")}>
+          <a href="#contact-anchor" className={addRandomSlide("cta-btn")}>
             Let's work together
           </a>
         </div>
