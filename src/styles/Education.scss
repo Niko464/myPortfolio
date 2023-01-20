@@ -50,6 +50,8 @@
   .title {
     color: var(--clr-title-1);
     margin-bottom: .5em;
+    font-size: 1.5em;
+    font-weight: 900;
   }
 
   .subtitle {
@@ -105,4 +107,24 @@
 }
 #year-5-logo {
   grid-area: y5-logo;
+}
+
+.wave-text {
+  display: flex;
+}
+
+.wave-text span {
+  animation-name: waviy;
+  animation-duration: calc(var(--totalLetters) * .20s);
+  animation-iteration-count: infinite;
+  animation-delay: calc(.1s * var(--i));
+}
+
+@keyframes waviy {
+  0%, 40%, 100% {
+    transform: translateY(0)
+  }
+  10% {
+    transform: translateY(-1em)
+  }
 }
