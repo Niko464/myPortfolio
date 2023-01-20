@@ -8,6 +8,8 @@
   background-size: contain;
   background-position: top right;
   background-image: url('./bgHeader.svg');
+
+  overflow: hidden;
 }
 
 .content-container {

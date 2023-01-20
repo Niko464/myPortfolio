@@ -1,6 +1,7 @@
 import "../../styles/Education.scss";
 import "../../styles/Hexagon.css";
 import AppearOnScroll from "../AppearOnScroll";
+import 'animate.css';
 
 import BackgroundStarEffect from "../BackgroundStarEffect";
 
@@ -23,7 +24,7 @@ function YearObject({ idx, title, subtitle, body, logoTitle, highlight }) {
   return (
     <>
       <AppearOnScroll
-        direction={idx % 2 !== 0 ? "left" : "right"}
+        direction={idx % 2 !== 0 ? "Left" : "Right"}
         baseClasses="text-container"
         id={`year-${idx}-txt`}
       >
@@ -32,7 +33,7 @@ function YearObject({ idx, title, subtitle, body, logoTitle, highlight }) {
         <p className="body">{body}</p>
       </AppearOnScroll>
       <AppearOnScroll
-        direction={idx % 2 === 0 ? "left" : "right"}
+        direction={idx % 2 === 0 ? "Left" : "Right"}
         baseClasses="hex-container"
         id={`year-${idx}-logo`}
       >

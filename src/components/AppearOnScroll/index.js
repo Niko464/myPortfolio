@@ -21,7 +21,7 @@ export default function AppearOnScroll({ children, direction, baseClasses, id })
   }, []);
 
   const getClassName = () => {
-    return baseClasses + " " + (isVisible ? `fade-in-done` : `fade-in fade-${direction}`)
+    return baseClasses + " animate__animated " + (isVisible ? `animate__fadeIn${direction} shown` : `hidden`)
   }
 
   return (

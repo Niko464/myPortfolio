@@ -1,5 +1,4 @@
 import "../../styles/Contact.css";
-import AppearOnScroll from "../AppearOnScroll";
 
 export default function Contact() {
   return (

@@ -17,6 +17,8 @@ export default function HomePage() {
     <div className="content">
       <Navigation />
       <HeroSection />
+      {/* <div id="about-anchor" className="spacer" />
+      <AboutMe /> */}
       <div id="education-anchor" className="spacer" />
       <Education />
       {/* <div id="skills-anchor" className="spacer" />
