@@ -1,0 +1,43 @@
+.skills-container {
+    /*I want all the items in this container to be on each other*/
+    display: flex;
+    background-color: aqua;
+}
+
+.skill {
+    position: absolute;
+    left: 0%;
+    /* background-color: var(--clr-neutral-400); */
+    background-color: red;
+    border-radius: 5px;
+    padding: 0.3em .75em;
+    animation-name: skillanim;
+    animation-iteration-count: infinite;
+    animation-delay: calc(0.3s * var(--delay));
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.skill-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--clr-title-1);
+}
+
+@keyframes skillanim {
+    0% {
+        opacity: 0;
+        left: 0%;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        left: 100%;
+    }
+}

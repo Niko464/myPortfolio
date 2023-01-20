@@ -1,6 +1,5 @@
 
 import "../../styles/Contact.css";
-import AppearOnScroll from "../AppearOnScroll";
 import ProjectCard from "../ProjectCard";
 
 import Shit from "./testImg.png";

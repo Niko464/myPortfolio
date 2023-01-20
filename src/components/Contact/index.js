@@ -14,7 +14,7 @@ export default function Contact() {
               <label for="email-address" className="contact-label">Email Address</label>
               <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="" className="contact-input"/>
               <label for="message" className="contact-label">Message</label>
-              <textarea rows="5" name="message" id="message" placeholder="Hello, I am interested in doing business with you. Can we schedule an appointment ?" required="" className="contact-textarea"></textarea>
+              <textarea rows="5" name="message" id="message" placeholder="Hello, I am interested in doing business with you. Can we schedule an appointment ?" required="" className="contact-textarea contact-input"></textarea>
               <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission"/>
             </fieldset>
             <input type="submit" value="Submit" className="contact-submit"/>
