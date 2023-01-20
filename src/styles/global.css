@@ -64,12 +64,6 @@ section {
   /* background-color: rgba(0, 0, 255, .2); */
 }
 
-.container-80 {
-  width: 80%;
-  position: relative;
-  /* background-color: rgba(0, 255, 0, .2); */
-}
-
 :root {
   font-size: clamp(12px, .85vw, 16px);
 }

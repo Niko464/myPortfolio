@@ -26,9 +26,9 @@ export default function HeroSection() {
             style={{ marginTop: "0.5em" }}
           >
             I'm a developper interested in lots of topics ranging from web
-            development: front-end and back-end to low level programming in C,
-            C++, machine learning in python or keeping myself up to date with
-            useful technos like docker.{" "}
+            development: front-end and back-end to programming in C,
+            C++, python for machine learning or keeping myself up to date with
+            useful technos like docker.
           </p>
           <p className={"description-text animate__animated animate__bounceInRight"}>
             And even if I don't know the technologies you want me too use, you

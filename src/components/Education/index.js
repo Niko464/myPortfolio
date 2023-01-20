@@ -29,7 +29,7 @@ function YearObject({ idx, title, subtitle, body, logoTitle, highlight }) {
         id={`year-${idx}-txt`}
       >
         {generateTitle(title, highlight)}
-        <p className="subtitle">{subtitle}</p>
+        <p className="subtitle" style={{textAlign: "center"}}>{subtitle}</p>
         <p className="body">{body}</p>
       </AppearOnScroll>
       <AppearOnScroll
@@ -49,13 +49,13 @@ export default function Education() {
   return (
     <section id="education">
       <BackgroundStarEffect />
-      <div className="container-80">
+      <div className="container-60">
         <h2 className="section-title section-title-left">Education</h2>
         <div className="education-container">
           <YearObject
             idx={1}
             title="Epitech Toulouse - France"
-            subtitle="Low Level Programming"
+            subtitle="C Programming && Memory Management"
             body="The first year at epitech mainly focusses at building a deep technical foundation for the following years to come.
             We learn Memory management through C, The projects are mainly solo projects."
             logoTitle="1st Year"

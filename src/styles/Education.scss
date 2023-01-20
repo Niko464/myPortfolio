@@ -12,6 +12,7 @@
     "y5-txt y5-logo";
 
   overflow-x: hidden;
+  // align-items: center;
   // background-color: rgba(255, 0, 0, 0.2);
 }
 
@@ -46,7 +47,8 @@
   flex-direction: column;
   height: 100%;
   width: 100%;
-  padding: 2em 2em;
+  // padding: 2em 2em;
+  // margin: 2em 2em;
 
   .title {
     color: var(--clr-title-1);

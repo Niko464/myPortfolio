@@ -7,7 +7,7 @@ export default function Contact() {
         <h2 className="section-title section-title-left">Contact me</h2>
         <div className="contact-container">
           <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xvongwbz" method="post" className="contact-form">
-            <fieldset id="fs-frm-inputs" className="contact-fieldset">
+            <fieldset id="fs-frm-inputs" className="contact-fieldset animate__animated animate__bounceIn">
               <label for="full-name" className="contact-label">Full Name</label>
               <input type="text" name="name" id="full-name" placeholder="First and Last" required="" className="contact-input"/>
               <label for="email-address" className="contact-label">Email Address</label>
@@ -16,7 +16,7 @@ export default function Contact() {
               <textarea rows="5" name="message" id="message" placeholder="Hello, I am interested in doing business with you. Can we schedule an appointment ?" required="" className="contact-textarea contact-input"></textarea>
               <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission"/>
             </fieldset>
-            <input type="submit" value="Submit" className="contact-submit"/>
+            <input type="submit" value="Submit" className="contact-submit animate__animated animate__bounceIn"/>
           </form>
         </div>
       </div>

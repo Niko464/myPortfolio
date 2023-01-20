@@ -70,14 +70,11 @@ export default function Navigation() {
           <FaTimes onClick={toggle} className="nav-close-btn" />
           <ul>
             <Scrollspy
-              items={["home", "about", "education", "skills", "projects", "contact"]}
+              items={["home", "education", "skills", "projects", "contact"]}
               currentClassName="active"
             >
               <li>
                 <a href="#home" onClick={toggle}>Home</a>
-              </li>
-              <li>
-                <a href="#about-anchor" onClick={toggle}>About Me</a>
               </li>
               <li>
                 <a href="#education-anchor" onClick={toggle}>Education</a>
