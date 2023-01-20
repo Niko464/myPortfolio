@@ -74,22 +74,22 @@ export default function Navigation() {
               currentClassName="active"
             >
               <li>
-                <a href="#home">Home</a>
+                <a href="#home" onClick={toggle}>Home</a>
               </li>
               <li>
-                <a href="#about-anchor">About Me</a>
+                <a href="#about-anchor" onClick={toggle}>About Me</a>
               </li>
               <li>
-                <a href="#education-anchor">Education</a>
+                <a href="#education-anchor" onClick={toggle}>Education</a>
               </li>
               <li>
-                <a href="#skills-anchor">Skills</a>
+                <a href="#skills-anchor" onClick={toggle}>Skills</a>
               </li>
               <li>
-                <a href="#projects-anchor">Projects</a>
+                <a href="#projects-anchor" onClick={toggle}>Projects</a>
               </li>
               <li>
-                <a href="#contact-anchor">Contact</a>
+                <a href="#contact-anchor" onClick={toggle}>Contact</a>
               </li>
             </Scrollspy>
           </ul>
