@@ -49,7 +49,7 @@ export default function Education() {
   return (
     <section id="education">
       <BackgroundStarEffect />
-      <div className="container-60">
+      <div className="education-container-border">
         <h2 className="section-title section-title-left">Education</h2>
         <div className="education-container">
           <YearObject

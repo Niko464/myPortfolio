@@ -53,18 +53,18 @@
   .title {
     color: var(--clr-title-1);
     margin-bottom: .5em;
-    font-size: 1.8em;
+    font-size: var(--font-sz-15);
     font-weight: 900;
   }
 
   .subtitle {
     color: var(--clr-subtitle-1);
-    font-size: 1.5em;
+    font-size: var(--font-sz-10);
     margin-bottom: .5em;
   }
 
   .body {
-    font-size: 1.2em;
+    font-size: var(--font-sz-5);
     color: var(--clr-body-1);
     text-align: center;
   }
@@ -76,9 +76,20 @@
   justify-content: center;
   flex-direction: column;
   padding: 5rem 0 5rem 0;
-  font-size: 1.5em;
+  font-size: var(--font-sz-10);
 
   // background-color: rgba(255, 0, 0, .2);
+}
+
+.education-container-border {
+  width: 60%;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .education-container-border {
+    width: 80%;
+  }
 }
 
 #year-1-txt {

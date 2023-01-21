@@ -11,5 +11,12 @@
   --clr-subtitle-1: #8892b0;
   --clr-body-1: #828daa;
 
+  --font-sz-15: 1.8em;
+  --font-sz-12: 1.65em;
+  --font-sz-11: 1.575em;
+  --font-sz-10: 1.5em;
+  --font-sz-7: 1.35em;
+  --font-sz-5: 1.2em;
+
   --clr-box-shadow: rgba(204, 214, 246, 0.24);
 }

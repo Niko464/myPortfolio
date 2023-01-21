@@ -32,7 +32,9 @@ export default function Skills() {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-          initialSlide: 0
+          initialSlide: 0,
+          autoplay: true,
+          autoplaySpeed: 4000,
         }
       },
       {
@@ -40,7 +42,9 @@ export default function Skills() {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          initialSlide: 0
+          initialSlide: 0,
+          autoplay: true,
+          autoplaySpeed: 5000,
         }
       },
       {
@@ -48,7 +52,9 @@ export default function Skills() {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          initialSlide: 0
+          initialSlide: 0,
+          autoplay: true,
+          autoplaySpeed: 6000,
         }
       }
     ]
