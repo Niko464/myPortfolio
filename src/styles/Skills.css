@@ -56,14 +56,15 @@
     margin: 0.5em 0;
     color: var(--clr-title-1);
     position: relative;
+    font-size: 1.5em;
   }
   
   .skill h3::before {
     content: "";
     position: absolute;
     bottom:-10px;
-    left: 0;
-    width: 100%;
+    left: -10px;
+    width: calc(100% + 20px);
     border-radius: 5px;
     background: linear-gradient(90deg, #fc03c2, #8403fc);
     height: 0.3em;
@@ -73,4 +74,5 @@
     margin: 0 1em;
     color: var(--clr-subtitle-1);
     margin-top: 0.5em;
+    font-size: 1.2em;
   }
