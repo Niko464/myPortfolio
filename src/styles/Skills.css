@@ -1,43 +1,76 @@
 .skills-container {
-    /*I want all the items in this container to be on each other*/
+    width: 90%;
+    /* overflow: visible; */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .skills-container {
+      width: 80%;
+    }
+  }
+  
+  /* Allows for a gap between elements*/
+  .slick-slide > div {
+    margin: 0 40px;
+  }
+  /* Allows for a gap between elements*/
+  .slick-list {
+    margin: 0 -40px;
+  }
+  
+  .skill {
+    background-color: var(--clr-neutral-400);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px solid var(--clr-accent-500);
+    height: 400px;
+    box-shadow: var(--clr-box-shadow) 0px 3px 8px;
+    margin: 3em 0;
+  }
+  
+  .skill-text-container {
+    background-color: var(--clr-neutral-600);
+    padding-bottom: 200px;
     display: flex;
-    background-color: aqua;
-}
-
-.skill {
-    position: absolute;
-    left: 0%;
-    /* background-color: var(--clr-neutral-400); */
-    background-color: red;
-    border-radius: 5px;
-    padding: 0.3em .75em;
-    animation-name: skillanim;
-    animation-iteration-count: infinite;
-    animation-delay: calc(0.3s * var(--delay));
-    animation-duration: 5s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-}
-
-.skill-title {
-    font-size: 1.5rem;
-    font-weight: 600;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid var(--clr-accent-500);
+  }
+  
+  .skill-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .skill-img-container img {
+    width: 200px;
+    height: 200px;
+    margin: 1em;
+    border-radius: 20px;
+    filter: invert(0.9);
+  }
+  
+  .skill h3 {
+    margin: 0.5em 0;
     color: var(--clr-title-1);
-}
-
-@keyframes skillanim {
-    0% {
-        opacity: 0;
-        left: 0%;
-    }
-    20% {
-        opacity: 1;
-    }
-    80% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-        left: 100%;
-    }
-}
+    position: relative;
+  }
+  
+  .skill h3::before {
+    content: "";
+    position: absolute;
+    bottom:-10px;
+    left: 0;
+    width: 100%;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #fc03c2, #8403fc);
+    height: 0.3em;
+  }
+  
+  .skill p {
+    margin: 0 1em;
+    color: var(--clr-subtitle-1);
+    margin-top: 0.5em;
+  }

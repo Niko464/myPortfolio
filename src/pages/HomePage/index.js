@@ -19,8 +19,8 @@ export default function HomePage() {
       <HeroSection />
       <div id="education-anchor" className="spacer" />
       <Education />
-      {/* <div id="skills-anchor" className="spacer" />
-      <Skills /> */}
+      <div id="skills-anchor" className="spacer" />
+      <Skills />
       {/* <div id="projects-anchor" className="spacer" />
       <Projects /> */}
       <div id="contact-anchor" className="spacer" />
