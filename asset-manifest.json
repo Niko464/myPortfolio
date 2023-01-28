@@ -1,10 +1,29 @@
 {
   "files": {
-    "main.css": "/myPortfolio/static/css/main.73e0bbdd.css",
-    "main.js": "/myPortfolio/static/js/main.fe11c5a8.js",
-    "static/media/testImg.png": "/myPortfolio/static/media/testImg.aba77d61711a65dfa5a2.png",
-    "static/media/secTestImg.png": "/myPortfolio/static/media/secTestImg.14de624e415d6bd8c61b.png",
+    "main.css": "/myPortfolio/static/css/main.23a15c57.css",
+    "main.js": "/myPortfolio/static/js/main.1fa8cec9.js",
+    "static/media/RTECH_AI_2.png": "/myPortfolio/static/media/RTECH_AI_2.d98bc4305c0d69577f59.png",
+    "static/media/GOMOKU_2.png": "/myPortfolio/static/media/GOMOKU_2.be21f08d21fa314e760e.png",
+    "static/media/RTECH_AI_1.png": "/myPortfolio/static/media/RTECH_AI_1.e5dc8744e72bd7d0c170.png",
+    "static/media/RTECH_GUI_2.png": "/myPortfolio/static/media/RTECH_GUI_2.bc93fdd8449fcc21dd2c.png",
+    "static/media/GOMOKU_1.png": "/myPortfolio/static/media/GOMOKU_1.0894fa88e0cca0b2f2a9.png",
+    "static/media/GOMOKU_3.png": "/myPortfolio/static/media/GOMOKU_3.d28b3d92a10bbd254565.png",
+    "static/media/GOMOKU_4.png": "/myPortfolio/static/media/GOMOKU_4.20d4e7db95c8ecd94460.png",
+    "static/media/RTECH_GUI_1.png": "/myPortfolio/static/media/RTECH_GUI_1.3b956797c8dccf1937d8.png",
+    "static/media/RTECH_GUI_3.png": "/myPortfolio/static/media/RTECH_GUI_3.97474799aad966df28e6.png",
+    "static/media/RTECH_GUI_4.png": "/myPortfolio/static/media/RTECH_GUI_4.609a95bc16901e49804d.png",
+    "static/media/PASSWORD_MANAGER_2.png": "/myPortfolio/static/media/PASSWORD_MANAGER_2.4e790ecc983f4caeaa42.png",
+    "static/media/PASSWORD_MANAGER_3.png": "/myPortfolio/static/media/PASSWORD_MANAGER_3.7485b83acb2b251d33fd.png",
+    "static/media/PASSWORD_MANAGER_4.png": "/myPortfolio/static/media/PASSWORD_MANAGER_4.cced150f62d32a921e9c.png",
+    "static/media/PASSWORD_MANAGER_1.png": "/myPortfolio/static/media/PASSWORD_MANAGER_1.b3fd3d591b4ad931b86a.png",
+    "static/media/CRYPTO_NOTIF_1.png": "/myPortfolio/static/media/CRYPTO_NOTIF_1.d0ea22490fd3146573dd.png",
+    "static/media/CRYPTO_NOTIF_2.png": "/myPortfolio/static/media/CRYPTO_NOTIF_2.5210b3512824e1a9cda2.png",
+    "static/media/NO_PICTUREV1.png": "/myPortfolio/static/media/NO_PICTUREV1.59fa71bbbdf9f8394834.png",
     "static/media/ai.png": "/myPortfolio/static/media/ai.610e1112f72ae9b8900a.png",
+    "static/media/MPR_2.png": "/myPortfolio/static/media/MPR_2.c8601ab79e105585b3e5.png",
+    "static/media/MPR_4.png": "/myPortfolio/static/media/MPR_4.32c8050a46110056a073.png",
+    "static/media/MPR_3.png": "/myPortfolio/static/media/MPR_3.b532619dc519ddce6f9c.png",
+    "static/media/MPR_1.png": "/myPortfolio/static/media/MPR_1.345c411588226eaf058f.png",
     "static/media/big-data.png": "/myPortfolio/static/media/big-data.ebfb015ddb970ae19173.png",
     "static/media/web-programming.png": "/myPortfolio/static/media/web-programming.c12c8bcfe71b7ff8e600.png",
     "static/media/oop.png": "/myPortfolio/static/media/oop.eed5436c25fd4a4dd578.png",
@@ -12,11 +31,11 @@
     "static/media/bgHeader.svg": "/myPortfolio/static/media/bgHeader.00e54162dc83a5b98cb8.svg",
     "static/media/bg-circles.svg": "/myPortfolio/static/media/bg-circles.109c2f9ef54949eb2cb4.svg",
     "static/media/bgFooter.svg": "/myPortfolio/static/media/bgFooter.353b8781cd8b0f183a629ef72736cd65.svg",
-    "main.73e0bbdd.css.map": "/myPortfolio/static/css/main.73e0bbdd.css.map",
-    "main.fe11c5a8.js.map": "/myPortfolio/static/js/main.fe11c5a8.js.map"
+    "main.23a15c57.css.map": "/myPortfolio/static/css/main.23a15c57.css.map",
+    "main.1fa8cec9.js.map": "/myPortfolio/static/js/main.1fa8cec9.js.map"
   },
   "entrypoints": [
-    "static/css/main.73e0bbdd.css",
-    "static/js/main.fe11c5a8.js"
+    "static/css/main.23a15c57.css",
+    "static/js/main.1fa8cec9.js"
   ]
 }
