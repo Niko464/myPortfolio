@@ -21,8 +21,8 @@ export default function HomePage() {
       <Education />
       <div id="skills-anchor" className="spacer" />
       <Skills />
-      {/* <div id="projects-anchor" className="spacer" />
-      <Projects /> */}
+      <div id="projects-anchor" className="spacer" />
+      <Projects />
       <div id="contact-anchor" className="spacer" />
       <Contact/>
       

@@ -1,0 +1,114 @@
+
+
+.project-modal-overlay {
+    position: fixed;
+    inset: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+.project-modal {
+    position: absolute;
+    --x: 10%;
+    --y: 10%;
+
+    top: var(--y);
+    /* bottom: var(--y); */
+    left: var(--x);
+    right: var(--x);
+    
+    background-color: var(--clr-neutral-400);
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+
+    border: 2px solid var(--clr-accent-400);
+}
+
+
+.project-modal:focus {
+    outline: none;
+}
+
+.project-modal-container {
+    --margin-x: 2em;
+
+    margin-top: 2.5em;
+    margin-left: var(--margin-x);
+    margin-right: var(--margin-x);
+}
+
+.project-modal .close-btn {
+    color: white;
+    padding: .5em .5em;
+    width: 1.5em;
+    height: 1.5em;
+    right: 0;
+    top: 0;
+    position: absolute;
+    /* background-color: red; */
+    transition: transform 0.2s ease-in-out;
+}
+
+.project-modal .close-btn:hover {
+    transform: scale(1.2);
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-modal img {
+    margin: auto;
+    width: 100%;
+    max-width: 800px;
+    max-height: 720px;
+    height: 100%;
+    border-radius: 10px
+}
+
+.project-modal h2 {
+    color: var(--clr-title-1);
+    position: relative;
+    width: fit-content;
+}
+
+.project-modal h2::before {
+    content: "";
+    position: absolute;
+    bottom:-10px;
+    left: -10px;
+    width: calc(100% + 20px);
+    border-radius: 5px;
+    background: linear-gradient(90deg, #fc03c2, #8403fc);
+    height: 0.2em;
+}
+
+.project-modal p {
+    color: var(--clr-body-1);
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.github-btn {
+    font-size: 2em;
+    color: white;
+    transition: transform 0.2s ease-in-out;
+}
+
+.github-btn:hover {
+    transform: scale(1.1);
+}
+
+
+@media screen and (min-width: 1024px) {
+    .project-modal {
+        --x: 20%;
+        --y: 10%;
+    }
+}
