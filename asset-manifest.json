@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/myPortfolio/static/css/main.23a15c57.css",
-    "main.js": "/myPortfolio/static/js/main.1fa8cec9.js",
+    "main.css": "/myPortfolio/static/css/main.e65a767b.css",
+    "main.js": "/myPortfolio/static/js/main.84500993.js",
     "static/media/RTECH_AI_2.png": "/myPortfolio/static/media/RTECH_AI_2.d98bc4305c0d69577f59.png",
     "static/media/GOMOKU_2.png": "/myPortfolio/static/media/GOMOKU_2.be21f08d21fa314e760e.png",
     "static/media/RTECH_AI_1.png": "/myPortfolio/static/media/RTECH_AI_1.e5dc8744e72bd7d0c170.png",
@@ -31,11 +31,11 @@
     "static/media/bgHeader.svg": "/myPortfolio/static/media/bgHeader.00e54162dc83a5b98cb8.svg",
     "static/media/bg-circles.svg": "/myPortfolio/static/media/bg-circles.109c2f9ef54949eb2cb4.svg",
     "static/media/bgFooter.svg": "/myPortfolio/static/media/bgFooter.353b8781cd8b0f183a629ef72736cd65.svg",
-    "main.23a15c57.css.map": "/myPortfolio/static/css/main.23a15c57.css.map",
-    "main.1fa8cec9.js.map": "/myPortfolio/static/js/main.1fa8cec9.js.map"
+    "main.e65a767b.css.map": "/myPortfolio/static/css/main.e65a767b.css.map",
+    "main.84500993.js.map": "/myPortfolio/static/js/main.84500993.js.map"
   },
   "entrypoints": [
-    "static/css/main.23a15c57.css",
-    "static/js/main.1fa8cec9.js"
+    "static/css/main.e65a767b.css",
+    "static/js/main.84500993.js"
   ]
 }
