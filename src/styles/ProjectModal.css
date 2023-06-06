@@ -43,9 +43,9 @@
 
 .project-modal .close-btn {
     color: white;
-    padding: .5em .5em;
-    width: 1.5em;
-    height: 1.5em;
+    margin: .5em .5em;
+    width: 2.5em;
+    height: 2.5em;
     right: 0;
     top: 0;
     position: absolute;
