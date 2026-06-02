@@ -110,13 +110,56 @@
 }
 .project-modal .slick-prev,
 .project-modal .slick-next {
-  z-index: 4;
+  z-index: 5;
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(11, 11, 18, 0.78);
+  border: 1px solid var(--border-strong);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.55);
+  transition: background 0.2s var(--ease), border-color 0.2s var(--ease),
+    transform 0.2s var(--ease);
+}
+.project-modal .slick-prev:hover,
+.project-modal .slick-next:hover,
+.project-modal .slick-prev:focus,
+.project-modal .slick-next:focus {
+  background: var(--accent);
+  border-color: var(--accent);
+  transform: scale(1.08);
 }
 .project-modal .slick-prev {
-  left: 12px;
+  left: 16px;
 }
 .project-modal .slick-next {
-  right: 12px;
+  right: 16px;
+}
+.project-modal .slick-prev::before,
+.project-modal .slick-next::before {
+  font-size: 22px;
+  line-height: 1;
+  color: #fff;
+  opacity: 1;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 560px) {
+  .project-modal .slick-prev,
+  .project-modal .slick-next {
+    width: 40px;
+    height: 40px;
+  }
+  .project-modal .slick-prev {
+    left: 8px;
+  }
+  .project-modal .slick-next {
+    right: 8px;
+  }
 }
 
 @media (max-width: 560px) {
