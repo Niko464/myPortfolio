@@ -122,8 +122,7 @@
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.55);
-  transition: background 0.2s var(--ease), border-color 0.2s var(--ease),
-    transform 0.2s var(--ease);
+  transition: background 0.2s var(--ease), border-color 0.2s var(--ease);
 }
 .project-modal .slick-prev:hover,
 .project-modal .slick-next:hover,
@@ -131,7 +130,6 @@
 .project-modal .slick-next:focus {
   background: var(--accent);
   border-color: var(--accent);
-  transform: scale(1.08);
 }
 .project-modal .slick-prev {
   left: 16px;
