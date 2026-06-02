@@ -3,7 +3,7 @@
 export const SITE = {
   name: "Nikolaj De Smet",
   github: "https://github.com/Niko464",
-  linkedin: "https://www.linkedin.com/in/nikolaj-de-smet",
+  linkedin: "https://www.linkedin.com/in/nikolaj-de-smet-3417b51a1/",
   resume: process.env.PUBLIC_URL + "/resume.pdf",
   formspree: "https://formspree.io/f/xvongwbz",
 };
