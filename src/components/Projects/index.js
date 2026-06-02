@@ -90,6 +90,7 @@ const projects = [
     githubLink: null,
     tags: ["AI", "Computer Vision"],
     featured: true,
+    client: true,
   },
   {
     title: "C++ Qt GUI",
@@ -100,6 +101,7 @@ const projects = [
       "The client had a C++ program that computed lots of data to simulate the re-entry of a satellite in the atmosphere. The client wanted a GUI to display the data in a more user friendly way. I was responsible of creating the GUI using Qt in C++. I was not responsible for the computing/simulation part of the project.",
     githubLink: null,
     tags: ["C++", "Qt", "Desktop"],
+    client: true,
   },
   {
     title: "Twitch Bot",
