@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b4595221.css",
-    "main.js": "/static/js/main.900cfe63.js",
+    "main.js": "/static/js/main.eab46b64.js",
     "static/media/RTECH_AI_2.png": "/static/media/RTECH_AI_2.d98bc4305c0d69577f59.png",
     "static/media/GOMOKU_2.png": "/static/media/GOMOKU_2.be21f08d21fa314e760e.png",
     "static/media/RTECH_AI_1.png": "/static/media/RTECH_AI_1.e5dc8744e72bd7d0c170.png",
@@ -12,40 +12,42 @@
     "static/media/RTECH_GUI_1.png": "/static/media/RTECH_GUI_1.3b956797c8dccf1937d8.png",
     "static/media/LIVELINX_3.png": "/static/media/LIVELINX_3.bf5fb606029c0246f1e1.png",
     "static/media/RENO_4.png": "/static/media/RENO_4.4a13c3b4137c285a827a.png",
+    "static/media/CASINO_HOME.png": "/static/media/CASINO_HOME.7e0ce5d1f5152d573f92.png",
     "static/media/RTECH_GUI_3.png": "/static/media/RTECH_GUI_3.97474799aad966df28e6.png",
     "static/media/LIVELINX_4.png": "/static/media/LIVELINX_4.c0e8fd1a17a6f472b7f0.png",
+    "static/media/CASINO_SLOT_777_VID.mp4": "/static/media/CASINO_SLOT_777_VID.106fa4c10340c32faeee.mp4",
+    "static/media/CASINO_ADMIN.png": "/static/media/CASINO_ADMIN.e28eaee325af3e4ba5f9.png",
     "static/media/RENO_1.png": "/static/media/RENO_1.79cb30406e2e07f5edad.png",
+    "static/media/CASINO_PLINKO_VID.mp4": "/static/media/CASINO_PLINKO_VID.ea46f42fd5c20d3af20a.mp4",
     "static/media/RTECH_GUI_4.png": "/static/media/RTECH_GUI_4.609a95bc16901e49804d.png",
+    "static/media/CASINO_SLOT35.png": "/static/media/CASINO_SLOT35.fb140d99b494dcaeece3.png",
     "static/media/NATAN_2.png": "/static/media/NATAN_2.25ae04fa65d8b52f4425.png",
     "static/media/LIVELINX_1.png": "/static/media/LIVELINX_1.9f4a15bd972ca5c7526f.png",
     "static/media/LIVELINX_2.png": "/static/media/LIVELINX_2.e5ce8aa99a122ebfaacd.png",
     "static/media/LIVELINX_5.jpg": "/static/media/LIVELINX_5.71833da491881122e477.jpg",
-    "static/media/CASINO_VID2.mp4": "/static/media/CASINO_VID2.4b38849bd7b522005f4a.mp4",
     "static/media/RENO_3.jpg": "/static/media/RENO_3.861d1d50ae06fe37f3ce.jpg",
+    "static/media/CASINO_DICE_VID.mp4": "/static/media/CASINO_DICE_VID.fcc6b9cc26ca73a3e112.mp4",
     "static/media/PASSWORD_MANAGER_2.png": "/static/media/PASSWORD_MANAGER_2.4e790ecc983f4caeaa42.png",
-    "static/media/CASINO_VID1.mp4": "/static/media/CASINO_VID1.7085dd586f862188bf75.mp4",
     "static/media/PASSWORD_MANAGER_3.png": "/static/media/PASSWORD_MANAGER_3.7485b83acb2b251d33fd.png",
     "static/media/PASSWORD_MANAGER_4.png": "/static/media/PASSWORD_MANAGER_4.cced150f62d32a921e9c.png",
     "static/media/NATAN_1.png": "/static/media/NATAN_1.3b01d401a5ec425015cd.png",
     "static/media/NATAN_3.png": "/static/media/NATAN_3.7b7ba4b07efa7dd5b05a.png",
-    "static/media/CASINO_3.png": "/static/media/CASINO_3.4d1eb80cf975291de122.png",
     "static/media/RENO_2.png": "/static/media/RENO_2.d2fe10f8356d9621c1e3.png",
     "static/media/PASSWORD_MANAGER_1.png": "/static/media/PASSWORD_MANAGER_1.b3fd3d591b4ad931b86a.png",
-    "static/media/CASINO_2.png": "/static/media/CASINO_2.aef7ac07417e8255703f.png",
+    "static/media/CASINO_MINES_VID.mp4": "/static/media/CASINO_MINES_VID.ae06a2234f5c1521c13a.mp4",
     "static/media/CRYPTO_NOTIF_1.png": "/static/media/CRYPTO_NOTIF_1.d0ea22490fd3146573dd.png",
     "static/media/CRYPTO_NOTIF_2.png": "/static/media/CRYPTO_NOTIF_2.5210b3512824e1a9cda2.png",
     "static/media/NO_PICTUREV1.png": "/static/media/NO_PICTUREV1.59fa71bbbdf9f8394834.png",
-    "static/media/CASINO_1.png": "/static/media/CASINO_1.b83967acb432ca2502e1.png",
     "static/media/MPR_2.png": "/static/media/MPR_2.c8601ab79e105585b3e5.png",
     "static/media/MPR_4.png": "/static/media/MPR_4.32c8050a46110056a073.png",
     "static/media/MPR_3.png": "/static/media/MPR_3.b532619dc519ddce6f9c.png",
     "static/media/MPR_1.png": "/static/media/MPR_1.345c411588226eaf058f.png",
     "index.html": "/index.html",
     "main.b4595221.css.map": "/static/css/main.b4595221.css.map",
-    "main.900cfe63.js.map": "/static/js/main.900cfe63.js.map"
+    "main.eab46b64.js.map": "/static/js/main.eab46b64.js.map"
   },
   "entrypoints": [
     "static/css/main.b4595221.css",
-    "static/js/main.900cfe63.js"
+    "static/js/main.eab46b64.js"
   ]
 }
