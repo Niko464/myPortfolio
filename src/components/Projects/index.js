@@ -42,11 +42,13 @@ import RENO_4 from "./pictures/RENO_4.png";
 import NATAN_1 from "./pictures/NATAN_1.png";
 import NATAN_2 from "./pictures/NATAN_2.png";
 import NATAN_3 from "./pictures/NATAN_3.png";
-import CASINO_1 from "./pictures/CASINO_1.png";
-import CASINO_2 from "./pictures/CASINO_2.png";
-import CASINO_3 from "./pictures/CASINO_3.png";
-import CASINO_VID1 from "./pictures/CASINO_VID1.mp4";
-import CASINO_VID2 from "./pictures/CASINO_VID2.mp4";
+import CASINO_HOME from "./pictures/CASINO_HOME.png";
+import CASINO_SLOT35 from "./pictures/CASINO_SLOT35.png";
+import CASINO_ADMIN from "./pictures/CASINO_ADMIN.png";
+import CASINO_DICE_VID from "./pictures/CASINO_DICE_VID.mp4";
+import CASINO_MINES_VID from "./pictures/CASINO_MINES_VID.mp4";
+import CASINO_PLINKO_VID from "./pictures/CASINO_PLINKO_VID.mp4";
+import CASINO_SLOT777_VID from "./pictures/CASINO_SLOT_777_VID.mp4";
 
 const projects = [
   {
@@ -111,8 +113,16 @@ const projects = [
   {
     title: "MyCasino",
     desc: "A full-stack multiplayer casino — Dice, Mines, Plinko and slots with provably-fair RNG and real-time betting.",
-    previewImg: CASINO_1,
-    presentationImages: [CASINO_VID1, CASINO_VID2, CASINO_1, CASINO_2, CASINO_3],
+    previewImg: CASINO_HOME,
+    presentationImages: [
+      CASINO_DICE_VID,
+      CASINO_MINES_VID,
+      CASINO_PLINKO_VID,
+      CASINO_SLOT777_VID,
+      CASINO_HOME,
+      CASINO_SLOT35,
+      CASINO_ADMIN,
+    ],
     longDescription:
       "A full-stack, multiplayer browser casino built purely for fun — Dice, Mines, Plinko and two slot machines. Every bet resolves through a provably-fair RNG (HMAC-SHA256 over a server seed, client seed and nonce) so outcomes are verifiable. A NestJS backend broadcasts live bets, balances, results and leaderboards to every connected player in real time over Socket.IO, with JWT-authenticated WebSocket connections and CASL-based authorization. An admin dashboard surfaces per-game PnL, variance and live user analytics, with per-user management and full bet history. Built as a Yarn monorepo: a Next.js 14 frontend (Tailwind, Zustand, React Query and matter-js physics for Plinko), the NestJS/MongoDB backend, a shared package and a load-testing simulation, all containerised with Docker Compose behind Traefik.",
     githubLink: null,
