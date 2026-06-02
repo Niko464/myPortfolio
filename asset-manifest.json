@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.07a7dacd.css",
-    "main.js": "/static/js/main.30f5f19e.js",
+    "main.css": "/static/css/main.79b24569.css",
+    "main.js": "/static/js/main.57e8acbe.js",
     "static/media/RTECH_AI_2.png": "/static/media/RTECH_AI_2.d98bc4305c0d69577f59.png",
     "static/media/GOMOKU_2.png": "/static/media/GOMOKU_2.be21f08d21fa314e760e.png",
     "static/media/RTECH_AI_1.png": "/static/media/RTECH_AI_1.e5dc8744e72bd7d0c170.png",
@@ -19,20 +19,16 @@
     "static/media/CRYPTO_NOTIF_1.png": "/static/media/CRYPTO_NOTIF_1.d0ea22490fd3146573dd.png",
     "static/media/CRYPTO_NOTIF_2.png": "/static/media/CRYPTO_NOTIF_2.5210b3512824e1a9cda2.png",
     "static/media/NO_PICTUREV1.png": "/static/media/NO_PICTUREV1.59fa71bbbdf9f8394834.png",
-    "static/media/ai.png": "/static/media/ai.610e1112f72ae9b8900a.png",
     "static/media/MPR_2.png": "/static/media/MPR_2.c8601ab79e105585b3e5.png",
     "static/media/MPR_4.png": "/static/media/MPR_4.32c8050a46110056a073.png",
     "static/media/MPR_3.png": "/static/media/MPR_3.b532619dc519ddce6f9c.png",
     "static/media/MPR_1.png": "/static/media/MPR_1.345c411588226eaf058f.png",
-    "static/media/big-data.png": "/static/media/big-data.ebfb015ddb970ae19173.png",
-    "static/media/web-programming.png": "/static/media/web-programming.c12c8bcfe71b7ff8e600.png",
-    "static/media/oop.png": "/static/media/oop.eed5436c25fd4a4dd578.png",
     "index.html": "/index.html",
-    "main.07a7dacd.css.map": "/static/css/main.07a7dacd.css.map",
-    "main.30f5f19e.js.map": "/static/js/main.30f5f19e.js.map"
+    "main.79b24569.css.map": "/static/css/main.79b24569.css.map",
+    "main.57e8acbe.js.map": "/static/js/main.57e8acbe.js.map"
   },
   "entrypoints": [
-    "static/css/main.07a7dacd.css",
-    "static/js/main.30f5f19e.js"
+    "static/css/main.79b24569.css",
+    "static/js/main.57e8acbe.js"
   ]
 }
