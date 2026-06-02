@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.9310847c.css",
-    "main.js": "/static/js/main.eab46b64.js",
+    "main.js": "/static/js/main.543c9b3b.js",
     "static/media/RTECH_AI_2.png": "/static/media/RTECH_AI_2.d98bc4305c0d69577f59.png",
     "static/media/GOMOKU_2.png": "/static/media/GOMOKU_2.be21f08d21fa314e760e.png",
     "static/media/RTECH_AI_1.png": "/static/media/RTECH_AI_1.e5dc8744e72bd7d0c170.png",
@@ -44,10 +44,10 @@
     "static/media/MPR_1.png": "/static/media/MPR_1.345c411588226eaf058f.png",
     "index.html": "/index.html",
     "main.9310847c.css.map": "/static/css/main.9310847c.css.map",
-    "main.eab46b64.js.map": "/static/js/main.eab46b64.js.map"
+    "main.543c9b3b.js.map": "/static/js/main.543c9b3b.js.map"
   },
   "entrypoints": [
     "static/css/main.9310847c.css",
-    "static/js/main.eab46b64.js"
+    "static/js/main.543c9b3b.js"
   ]
 }
