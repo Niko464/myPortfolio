@@ -5,7 +5,7 @@ import ProjectModal from "../ProjectModal";
 import { staggerItem } from "../Reveal";
 
 export default function ProjectCard({ project, isOpen, onOpen, onClose }) {
-  const { title, desc, previewImg, tags, featured, hasImage, githubLink } = project;
+  const { title, desc, previewImg, tags, featured, hasImage, githubLink, client } = project;
 
   return (
     <>
@@ -26,6 +26,7 @@ export default function ProjectCard({ project, isOpen, onOpen, onClose }) {
           />
         )}
         <div className="pcard__overlay" />
+        {client && <span className="pcard__badge">Client</span>}
 
         <div className="pcard__content">
           <ul className="pcard__tags">

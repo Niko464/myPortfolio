@@ -30,7 +30,56 @@ import RTECH_GUI_2 from "./pictures/RTECH_GUI_2.png";
 import RTECH_GUI_3 from "./pictures/RTECH_GUI_3.png";
 import RTECH_GUI_4 from "./pictures/RTECH_GUI_4.png";
 
+import LIVELINX_1 from "./pictures/LIVELINX_1.png";
+import LIVELINX_2 from "./pictures/LIVELINX_2.png";
+import LIVELINX_3 from "./pictures/LIVELINX_3.png";
+import LIVELINX_4 from "./pictures/LIVELINX_4.png";
+import LIVELINX_5 from "./pictures/LIVELINX_5.jpg";
+import RENO_1 from "./pictures/RENO_1.png";
+import RENO_2 from "./pictures/RENO_2.png";
+import RENO_3 from "./pictures/RENO_3.jpg";
+import RENO_4 from "./pictures/RENO_4.png";
+import NATAN_1 from "./pictures/NATAN_1.png";
+import NATAN_2 from "./pictures/NATAN_2.png";
+import NATAN_3 from "./pictures/NATAN_3.png";
+
 const projects = [
+  {
+    title: "LiveLinx",
+    desc: "Digital learning platform for the medical sector — built and operated end-to-end as lead engineer.",
+    previewImg: LIVELINX_1,
+    presentationImages: [LIVELINX_1, LIVELINX_2, LIVELINX_3, LIVELINX_4, LIVELINX_5],
+    longDescription:
+      "As lead engineer at LiveLinx I own the company's digital learning platform for the medical sector end-to-end — across frontend, backend and infrastructure. Hospitals and clinicians use it to build interactive training content (clinical cases with medical history, ECGs, echocardiography and imaging) and to run live in-person training events powered by the platform. I build and maintain the product with React, TypeScript and GraphQL on AWS, and operate the production infrastructure: a Kubernetes cluster and Linux servers handling deployments, scaling, monitoring and reliability.",
+    githubLink: null,
+    tags: ["React", "GraphQL", "Kubernetes"],
+    featured: true,
+    client: true,
+  },
+  {
+    title: "Reno Energy — Quote Simulator",
+    desc: "A public 12-step simulator to configure a solar installation and request a quote online.",
+    previewImg: RENO_1,
+    presentationImages: [RENO_1, RENO_2, RENO_3, RENO_4],
+    longDescription:
+      "A public quote simulator (reno.energy/simulateur) that lets customers configure their own solar installation and request a quote online. The flow walks through twelve steps — simulation type, location, panel type, roof inclination and type, consumption, panel placement on a satellite view of the customer's actual roof, meter, storage battery and EV charger — then produces an instant configuration summary with a total price. Built with React and TypeScript.",
+    githubLink: null,
+    tags: ["React", "TypeScript"],
+    featured: true,
+    client: true,
+  },
+  {
+    title: "Natan — Product Management",
+    desc: "An internal tool to centrally manage a fashion house's products, variants, pricing and Shopify sync.",
+    previewImg: NATAN_1,
+    presentationImages: [NATAN_1, NATAN_2, NATAN_3],
+    longDescription:
+      "An internal product-management tool (app.natan.be) for the fashion house Natan to centrally track products, variants, pricing and imagery alongside customers and sales. Each product carries multi-language descriptions (FR/EN/NL), media, technical drawings, colour and size options and variants, with two-way Shopify sync and scheduled bulk import jobs that reconcile tens of thousands of products. Built with React, TypeScript and GraphQL.",
+    githubLink: null,
+    tags: ["React", "TypeScript", "GraphQL"],
+    featured: true,
+    client: true,
+  },
   {
     title: "Object Detection JAM",
     desc: "AI project detecting pieces of trash on a conveyor belt full of JAM.",
@@ -51,7 +100,6 @@ const projects = [
       "The client had a C++ program that computed lots of data to simulate the re-entry of a satellite in the atmosphere. The client wanted a GUI to display the data in a more user friendly way. I was responsible of creating the GUI using Qt in C++. I was not responsible for the computing/simulation part of the project.",
     githubLink: null,
     tags: ["C++", "Qt", "Desktop"],
-    featured: true,
   },
   {
     title: "Twitch Bot",
@@ -82,7 +130,6 @@ const projects = [
       "I created a simulation of the Mad Pod Racing game from codingame.com. I used genetic algorithms to create an AI that would be able to beat the game. I also created a library to be able to replay games and to see the evolution of the AI.",
     githubLink: "https://github.com/Niko464/ai-exploration/tree/master/codinGame",
     tags: ["AI", "Genetic Algo"],
-    featured: true,
   },
   {
     title: "Flappy AI",
@@ -165,9 +212,9 @@ export default function Projects() {
       <div className="container">
         <SectionHeading
           eyebrow="Projects"
-          title="Built for"
-          accent="the love of it."
-          lead="Personal projects beyond client work — AI, systems, games and the web, driven by curiosity."
+          title="Selected"
+          accent="work."
+          lead="Client products I've shipped and personal builds I've explored — from production platforms to AI experiments. Tap any card for the details."
         />
 
         <motion.div
