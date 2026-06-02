@@ -11,6 +11,9 @@ export default function ProjectModal({
   githubLink,
   title,
 }) {
+  const isVideo = (src) => /\.mp4($|\?)/i.test(src);
+  const hasVideo = pictures.some(isVideo);
+
   const carouselSettings = {
     className: "project-modal-carousel",
     dots: true,
@@ -19,7 +22,7 @@ export default function ProjectModal({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: pictures.length > 1,
-    autoplay: pictures.length > 1,
+    autoplay: !hasVideo && pictures.length > 1,
     autoplaySpeed: 4000,
   };
 
@@ -39,9 +42,13 @@ export default function ProjectModal({
 
       <div className="project-modal__media">
         <Slider {...carouselSettings}>
-          {pictures.map((img, index) => (
+          {pictures.map((media, index) => (
             <div key={"slide-" + index} className="project-modal__slide">
-              <img src={img} alt={`${title} screenshot ${index + 1}`} />
+              {isVideo(media) ? (
+                <video src={media} controls autoPlay loop muted playsInline preload="metadata" />
+              ) : (
+                <img src={media} alt={`${title} screenshot ${index + 1}`} />
+              )}
             </div>
           ))}
         </Slider>
