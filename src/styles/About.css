@@ -34,6 +34,29 @@
   margin-top: 1rem;
 }
 
+.about__langs {
+  margin-top: 2.2rem;
+}
+
+.about__lang-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.4rem;
+  margin-top: 0.9rem;
+}
+
+.about__lang {
+  font-size: 0.95rem;
+  color: var(--text);
+}
+.about__lang em {
+  font-style: normal;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  margin-left: 0.3rem;
+}
+
 .about__stats {
   display: grid;
   grid-template-columns: 1fr 1fr;

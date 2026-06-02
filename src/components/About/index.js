@@ -2,11 +2,11 @@ import "../../styles/About.css";
 import { motion } from "framer-motion";
 import Reveal, { stagger, staggerItem } from "../Reveal";
 import SectionHeading from "../SectionHeading";
-import { STATS } from "../../data/site";
+import { STATS, LANGUAGES } from "../../data/site";
 
 const TECH = [
-  "React", "Node", "Express", "MongoDB", "C", "C++", "Python",
-  "TensorFlow", "Keras", "Qt", "Docker", "Fastify",
+  "TypeScript", "React", "Node.js", "NestJS", "GraphQL", "PostgreSQL",
+  "Redis", "Prisma", "Docker", "Kubernetes", "AWS", "Tailwind", "Python", "C++",
 ];
 
 export default function About() {
@@ -17,20 +17,23 @@ export default function About() {
           <div>
             <SectionHeading
               eyebrow="About"
-              title="Curious by default,"
-              accent="builder by habit."
+              title="Owns it end-to-end,"
+              accent="frontend to infra."
             />
             <Reveal className="about__text" delay={0.05}>
               <p>
-                I'm a developer interested in lots of topics — ranging from web
-                development, front-end and back-end, to programming in C, C++ and
-                Python for machine learning, and keeping up to date with useful
-                technologies like Docker.
+                I'm a fullstack web and DevOps engineer who likes owning things
+                end-to-end — from a polished React/TypeScript frontend, through a
+                Node/NestJS + GraphQL backend, down to the Kubernetes cluster and
+                Linux servers it all runs on. Right now I'm lead engineer at
+                LiveLinx, building a digital learning platform for the medical
+                sector.
               </p>
               <p>
-                And even if I don't know the technology you'd like me to use, you
-                can still reach out — maybe it's the perfect time for me to learn
-                it. Who knows?
+                Away from client work I keep exploring — AI, genetic algorithms,
+                low-level C/C++ — because building things I've never built before
+                is how I stay sharp. Don't see your exact stack? I'll happily pick
+                it up.
               </p>
             </Reveal>
 
@@ -49,6 +52,17 @@ export default function About() {
                   </motion.li>
                 ))}
               </motion.ul>
+            </Reveal>
+
+            <Reveal className="about__langs" delay={0.15}>
+              <span className="about__tech-label">Speaks</span>
+              <div className="about__lang-row">
+                {LANGUAGES.map((l) => (
+                  <span key={l.name} className="about__lang">
+                    {l.name} <em>{l.level}</em>
+                  </span>
+                ))}
+              </div>
             </Reveal>
           </div>
 

@@ -165,9 +165,9 @@ export default function Projects() {
       <div className="container">
         <SectionHeading
           eyebrow="Projects"
-          title="A few things"
-          accent="I've built."
-          lead="Twelve projects spanning AI, systems, the web and a fair amount of curiosity."
+          title="Built for"
+          accent="the love of it."
+          lead="Personal projects beyond client work — AI, systems, games and the web, driven by curiosity."
         />
 
         <motion.div

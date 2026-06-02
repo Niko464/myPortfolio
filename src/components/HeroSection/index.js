@@ -30,7 +30,7 @@ export default function HeroSection() {
           animate="show"
         >
           <motion.span className="eyebrow" variants={item}>
-            Hi, my name is
+            {SITE.role}
           </motion.span>
 
           <motion.h1 className="hero__name" variants={item}>
@@ -42,9 +42,10 @@ export default function HeroSection() {
           </motion.h2>
 
           <motion.p className="hero__lead" variants={item}>
-            A developer drawn to a wide range of topics — from front-end and
-            back-end web development to C, C++ and Python for machine learning,
-            and tooling like Docker. Don't see your stack? I'll happily learn it.
+            Fullstack web &amp; DevOps engineer with 3+ years shipping production
+            apps end-to-end — React/TypeScript frontends, Node/NestJS + GraphQL
+            backends, and the Kubernetes clusters they run on. Currently lead
+            engineer at LiveLinx.
           </motion.p>
 
           <motion.div className="hero__actions" variants={item}>
@@ -87,11 +88,11 @@ export default function HeroSection() {
           <pre className="hero__code">
             <code>
 {`const nikolaj = {
-  role: "Software Developer",
-  trained: "Epitech + Tsinghua",
-  loves: ["AI", "systems", "the web"],
-  languages: ["C", "C++", "Python", "JS"],
-  status: "open to work",
+  role: "Fullstack & DevOps Engineer",
+  now: "Lead Engineer @ LiveLinx",
+  stack: ["React", "TypeScript", "GraphQL"],
+  infra: ["Kubernetes", "Docker", "AWS"],
+  status: "open to freelance",
 };`}
             </code>
           </pre>

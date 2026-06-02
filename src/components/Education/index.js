@@ -42,9 +42,9 @@ export default function Education() {
       <div className="container">
         <SectionHeading
           eyebrow="Education"
-          title="Five years,"
+          title="A Master's,"
           accent="two countries."
-          lead="A path from low-level C in Toulouse to distributed systems and machine learning at Tsinghua."
+          lead="A Master's in Computer Science at Epitech (2019–2024) — from low-level C in Toulouse to distributed systems and machine learning during an exchange year at Tsinghua."
         />
 
         <div className="timeline">

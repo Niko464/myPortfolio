@@ -16,10 +16,6 @@
     background 0.35s var(--ease);
 }
 
-.skill-card--wide {
-  grid-column: span 3;
-}
-
 .skill-card::after {
   content: "";
   position: absolute;
@@ -51,12 +47,10 @@
   background: var(--accent-soft);
   border: 1px solid var(--border);
 }
-.skill-card__icon img {
-  width: 30px;
-  height: 30px;
-  object-fit: contain;
-  filter: brightness(0) saturate(100%) invert(70%) sepia(40%) saturate(2000%)
-    hue-rotate(215deg) brightness(102%);
+.skill-card__icon svg {
+  width: 26px;
+  height: 26px;
+  color: var(--accent-2);
 }
 
 .skill-card__title {

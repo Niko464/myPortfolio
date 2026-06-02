@@ -1,7 +1,9 @@
-// Central place for personal links. Update LINKEDIN and drop a PDF at
-// public/resume.pdf to enable the "Résumé" button.
+// Central place for personal links. Drop an updated PDF at public/resume.pdf
+// to refresh the "Résumé" button.
 export const SITE = {
   name: "Nikolaj De Smet",
+  role: "Fullstack Web & DevOps Engineer",
+  email: "desmet.informatique@gmail.com",
   github: "https://github.com/Niko464",
   linkedin: "https://www.linkedin.com/in/nikolaj-de-smet-3417b51a1/",
   resume: process.env.PUBLIC_URL + "/resume.pdf",
@@ -11,15 +13,23 @@ export const SITE = {
 export const SECTIONS = [
   { id: "home", label: "Home" },
   { id: "about", label: "About" },
+  { id: "experience", label: "Experience" },
   { id: "skills", label: "Skills" },
-  { id: "education", label: "Education" },
   { id: "projects", label: "Projects" },
+  { id: "education", label: "Education" },
   { id: "contact", label: "Contact" },
 ];
 
 export const STATS = [
-  { value: "12+", label: "Projects shipped" },
-  { value: "5 yrs", label: "Epitech engineering" },
-  { value: "1 yr", label: "Tsinghua, Beijing" },
-  { value: "∞", label: "Things to learn" },
+  { value: "3+ yrs", label: "Shipping production apps" },
+  { value: "Lead", label: "Engineer @ LiveLinx" },
+  { value: "12+", label: "Personal projects" },
+  { value: "4", label: "Languages spoken" },
+];
+
+export const LANGUAGES = [
+  { name: "Dutch", level: "Native" },
+  { name: "French", level: "Native" },
+  { name: "English", level: "C1/C2" },
+  { name: "Spanish", level: "Basic" },
 ];

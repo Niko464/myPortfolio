@@ -1,46 +1,52 @@
 import "../../styles/Skills.css";
 import { motion } from "framer-motion";
+import {
+  FaLaptopCode,
+  FaServer,
+  FaCloud,
+  FaDatabase,
+  FaBrain,
+  FaMicrochip,
+} from "react-icons/fa";
 import SectionHeading from "../SectionHeading";
 import { stagger, staggerItem } from "../Reveal";
 
-import architecture_logo from "./pictures/architecture.png";
-import ai_logo from "./pictures/ai.png";
-import big_data_logo from "./pictures/big-data.png";
-import programming_logo from "./pictures/oop.png";
-import web_logo from "./pictures/web-programming.png";
-
 const skills = [
   {
-    name: "Software Architecture",
-    logo: architecture_logo,
+    name: "Frontend",
+    Icon: FaLaptopCode,
     description:
-      "I really like architecturing how software is built — on different levels, both the code architecture and the system architecture.",
-    size: "wide",
+      "Fast, accessible interfaces in React & TypeScript — with Tailwind, shadcn/ui and MUI, and state via React Query, Zustand or Redux.",
   },
   {
-    name: "Web Development",
-    logo: web_logo,
+    name: "Backend & APIs",
+    Icon: FaServer,
     description:
-      "Frontend and backend web development using React, Node, Express, MongoDB, and more.",
-    size: "wide",
+      "Services and APIs with Node.js, NestJS, Express and Fastify — GraphQL (Apollo, type-graphql) and REST.",
   },
   {
-    name: "Artificial Intelligence",
-    logo: ai_logo,
+    name: "DevOps & Infrastructure",
+    Icon: FaCloud,
     description:
-      "Multiple projects across NLP, genetic algorithms and object detection — usually with Python, TensorFlow and Keras.",
+      "Running production on Kubernetes, Docker and AWS — Linux servers, CI/CD, deployments, scaling and monitoring.",
   },
   {
-    name: "Big Data",
-    logo: big_data_logo,
+    name: "Databases",
+    Icon: FaDatabase,
     description:
-      "Set up a distributed database environment to help with scalability, availability and reliability.",
+      "Modeling and querying with PostgreSQL, MongoDB and Redis via Prisma and TypeORM — plus distributed storage with HDFS.",
   },
   {
-    name: "Object Oriented Programming",
-    logo: programming_logo,
+    name: "Machine Learning",
+    Icon: FaBrain,
     description:
-      "One of my favorite ways of thinking and coding. I love C++.",
+      "Hands-on ML and computer vision in Python — NLP, object detection and genetic algorithms.",
+  },
+  {
+    name: "Systems & Lower-level",
+    Icon: FaMicrochip,
+    description:
+      "Comfortable down low: C & C++, multithreading, network/socket programming and Qt desktop apps.",
   },
 ];
 
@@ -50,9 +56,9 @@ export default function Skills() {
       <div className="container">
         <SectionHeading
           eyebrow="Skills"
-          title="What I love to"
-          accent="work on."
-          lead="A handful of areas I keep coming back to — and keep getting better at."
+          title="The full"
+          accent="stack."
+          lead="End-to-end — from the pixels in the browser to the cluster running it all."
         />
 
         <motion.div
@@ -63,13 +69,9 @@ export default function Skills() {
           viewport={{ once: true, amount: 0.15 }}
         >
           {skills.map((skill) => (
-            <motion.article
-              key={skill.name}
-              className={`skill-card glass ${skill.size === "wide" ? "skill-card--wide" : ""}`}
-              variants={staggerItem}
-            >
+            <motion.article key={skill.name} className="skill-card glass" variants={staggerItem}>
               <div className="skill-card__icon">
-                <img src={skill.logo} alt="" />
+                <skill.Icon />
               </div>
               <h3 className="skill-card__title">{skill.name}</h3>
               <p className="skill-card__desc">{skill.description}</p>

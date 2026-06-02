@@ -1,5 +1,5 @@
 import "../../styles/Contact.css";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaEnvelope } from "react-icons/fa";
 import Reveal from "../Reveal";
 import SectionHeading from "../SectionHeading";
 import { SITE } from "../../data/site";
@@ -14,9 +14,18 @@ export default function Contact() {
               eyebrow="Contact"
               title="Let's build"
               accent="something."
-              lead="Have a project in mind, or a technology you'd like me to take on? Send a message — I read every one."
+              lead="Available for freelance, fully remote. Have a project in mind, or a technology you'd like me to take on? Send a message — I read every one."
             />
-            <Reveal className="contact__socials" delay={0.1}>
+            <Reveal className="contact__availability" delay={0.08}>
+              <span className="contact__dot" />
+              Available for freelance · Fully remote
+            </Reveal>
+            <Reveal className="contact__email" delay={0.1}>
+              <a href={`mailto:${SITE.email}`}>
+                <FaEnvelope /> {SITE.email}
+              </a>
+            </Reveal>
+            <Reveal className="contact__socials" delay={0.12}>
               <a href={SITE.github} target="_blank" rel="noreferrer" aria-label="GitHub">
                 <FaGithub />
               </a>
