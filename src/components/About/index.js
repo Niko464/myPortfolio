@@ -17,16 +17,16 @@ export default function About() {
           <div>
             <SectionHeading
               eyebrow="About"
-              title="Owns it end-to-end,"
+              title="Builds it end-to-end,"
               accent="frontend to infra."
             />
             <Reveal className="about__text" delay={0.05}>
               <p>
-                I'm a fullstack web and DevOps engineer who likes owning things
+                I'm a fullstack web and DevOps engineer who likes taking things
                 end-to-end — from a polished React/TypeScript frontend, through a
                 Node/NestJS + GraphQL backend, down to the Kubernetes cluster and
-                Linux servers it all runs on. Right now I'm lead engineer at
-                LiveLinx, building a digital learning platform for the medical
+                Linux servers it all runs on. Right now I'm the lead engineer at
+                LiveLinx, working on a digital learning platform for the medical
                 sector.
               </p>
               <p>

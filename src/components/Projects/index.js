@@ -57,7 +57,7 @@ const projects = [
     previewImg: LIVELINX_1,
     presentationImages: [LIVELINX_1, LIVELINX_2, LIVELINX_3, LIVELINX_4, LIVELINX_5],
     longDescription:
-      "As lead engineer at LiveLinx I own the company's digital learning platform for the medical sector end-to-end — across frontend, backend and infrastructure. Hospitals and clinicians use it to build interactive training content (clinical cases with medical history, ECGs, echocardiography and imaging) and to run live in-person training events powered by the platform. I build and maintain the product with React, TypeScript and GraphQL on AWS, and operate the production infrastructure: a Kubernetes cluster and Linux servers handling deployments, scaling, monitoring and reliability.",
+      "As the lead engineer at LiveLinx I lead development of the company's digital learning platform for the medical sector across the whole stack — frontend, backend and infrastructure. Hospitals and clinicians use it to build interactive training content (clinical cases with medical history, ECGs, echocardiography and imaging) and to run live in-person training events powered by the platform. I build and maintain the product with React, TypeScript and GraphQL on AWS, and operate the production infrastructure: a Kubernetes cluster and Linux servers handling deployments, scaling, monitoring and reliability.",
     githubLink: null,
     tags: ["React", "GraphQL", "Kubernetes"],
     featured: true,

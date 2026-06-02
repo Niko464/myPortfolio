@@ -11,7 +11,7 @@ const experience = [
     location: "Remote",
     current: true,
     bullets: [
-      "Lead engineer for LiveLinx's digital learning platform for the medical sector — where hospitals and clinicians build training content and run live in-person events — owning it end-to-end across frontend, backend and infrastructure.",
+      "Lead engineer for LiveLinx's digital learning platform for the medical sector — where hospitals and clinicians build training content and run live in-person events — working across the whole stack: frontend, backend and infrastructure.",
       "Build and maintain the product with React, TypeScript and GraphQL on AWS.",
       "Operate production infrastructure: administer a Kubernetes cluster and Linux servers, handling deployments, scaling, monitoring and reliability.",
     ],
