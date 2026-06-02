@@ -1,114 +1,127 @@
-
-
 .project-modal-overlay {
-    position: fixed;
-    inset: 0px;
-    background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 5, 9, 0.72);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.2s ease;
 }
-
-
+.project-modal-overlay.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+.project-modal-overlay.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
 
 .project-modal {
-    position: absolute;
-    --x: 10%;
-    --y: 10%;
-
-    top: var(--y);
-    /* bottom: var(--y); */
-    left: var(--x);
-    right: var(--x);
-    
-    background-color: var(--clr-neutral-400);
-    border-radius: 10px;
-
-    display: flex;
-    flex-direction: column;
-    opacity: 1;
-
-    border: 2px solid var(--clr-accent-400);
+  position: relative;
+  width: min(820px, 100%);
+  max-height: 88vh;
+  overflow-y: auto;
+  background: var(--bg-elev);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  outline: none;
+  transform: translateY(12px) scale(0.98);
+  transition: transform 0.25s var(--ease);
+}
+.project-modal.ReactModal__Content--after-open {
+  transform: translateY(0) scale(1);
 }
 
-
-.project-modal:focus {
-    outline: none;
+.project-modal__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 5;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 11px;
+  border: 1px solid var(--border-strong);
+  background: rgba(11, 11, 18, 0.6);
+  color: var(--text);
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s var(--ease), color 0.2s var(--ease);
+}
+.project-modal__close:hover {
+  background: var(--accent-soft);
+  color: var(--accent-2);
 }
 
-.project-modal-container {
-    --margin-x: 2em;
-
-    margin-top: 2.5em;
-    margin-left: var(--margin-x);
-    margin-right: var(--margin-x);
+.project-modal__media {
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  overflow: hidden;
+  background: #07070c;
 }
 
-.project-modal .close-btn {
-    color: white;
-    margin: .5em .5em;
-    width: 2.5em;
-    height: 2.5em;
-    right: 0;
-    top: 0;
-    position: absolute;
-    /* background-color: red; */
-    transition: transform 0.2s ease-in-out;
+.project-modal__slide img {
+  width: 100%;
+  max-height: 440px;
+  object-fit: contain;
+  margin: 0 auto;
 }
 
-.project-modal .close-btn:hover {
-    transform: scale(1.2);
+.project-modal__body {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
 }
 
-.img-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.project-modal__title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.6rem;
+  letter-spacing: -0.01em;
+  color: var(--text);
 }
 
-.project-modal img {
-    margin: auto;
-    width: 100%;
-    max-width: 800px;
-    max-height: 720px;
-    height: 100%;
-    border-radius: 10px
+.project-modal__desc {
+  color: var(--text-dim);
+  font-size: 0.98rem;
 }
 
-.project-modal h2 {
-    color: var(--clr-title-1);
-    position: relative;
-    width: fit-content;
+.project-modal__note {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--text-muted);
 }
 
-.project-modal h2::before {
-    content: "";
-    position: absolute;
-    bottom:-10px;
-    left: -10px;
-    width: calc(100% + 20px);
-    border-radius: 5px;
-    background: linear-gradient(90deg, #fc03c2, #8403fc);
-    height: 0.2em;
+/* slick dots / arrows tuned for dark modal */
+.project-modal .slick-dots li button:before {
+  color: var(--accent-2);
+  opacity: 0.4;
+}
+.project-modal .slick-dots li.slick-active button:before {
+  color: var(--accent-2);
+  opacity: 1;
+}
+.project-modal .slick-prev,
+.project-modal .slick-next {
+  z-index: 4;
+}
+.project-modal .slick-prev {
+  left: 12px;
+}
+.project-modal .slick-next {
+  right: 12px;
 }
 
-.project-modal p {
-    color: var(--clr-body-1);
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-
-.github-btn {
-    font-size: 2em;
-    color: white;
-    transition: transform 0.2s ease-in-out;
-}
-
-.github-btn:hover {
-    transform: scale(1.1);
-}
-
-
-@media screen and (min-width: 1024px) {
-    .project-modal {
-        --x: 20%;
-        --y: 10%;
-    }
+@media (max-width: 560px) {
+  .project-modal__body {
+    padding: 1.4rem;
+  }
+  .project-modal__slide img {
+    max-height: 300px;
+  }
 }

@@ -1,22 +1,40 @@
 :root {
-  --clr-accent-500: #5c52f2;
-  --clr-accent-400: #6c63ff;
+  --bg: #0b0b12;
+  --bg-2: #0e0e18;
+  --bg-elev: #14141f;
 
-  --clr-neutral-600: #181717;
-  --clr-neutral-400: #212121;
-  --clr-neutral-200: #E7E5FF;
-  --clr-neutral-100: #FFFFFF;
+  --surface: rgba(255, 255, 255, 0.03);
+  --surface-2: rgba(255, 255, 255, 0.05);
+  --surface-3: rgba(255, 255, 255, 0.07);
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.15);
 
-  --clr-title-1: #ccd6f6;
-  --clr-subtitle-1: #8892b0;
-  --clr-body-1: #828daa;
+  --accent: #7c6fff;
+  --accent-2: #b79cff;
+  --accent-3: #5c52f2;
+  --accent-soft: rgba(124, 111, 255, 0.14);
+  --accent-glow: rgba(124, 111, 255, 0.35);
+  --gradient-accent: linear-gradient(120deg, #7c6fff 0%, #b79cff 100%);
 
-  --font-sz-15: 1.8em;
-  --font-sz-12: 1.65em;
-  --font-sz-11: 1.575em;
-  --font-sz-10: 1.5em;
-  --font-sz-7: 1.35em;
-  --font-sz-5: 1.2em;
+  --text: #ececf5;
+  --text-dim: #a6a8c0;
+  --text-muted: #74769a;
 
-  --clr-box-shadow: rgba(204, 214, 246, 0.24);
+  --font-display: "Space Grotesk", "Outfit", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", "Fira Code", ui-monospace, monospace;
+
+  --radius-sm: 10px;
+  --radius: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+  --shadow-glow: 0 0 0 1px var(--border), 0 20px 60px -20px var(--accent-glow);
+
+  --maxw: 1180px;
+  --nav-h: 76px;
+
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
