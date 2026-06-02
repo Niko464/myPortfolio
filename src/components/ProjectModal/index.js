@@ -1,7 +1,6 @@
 import ReactModal from "react-modal";
 import "../../styles/ProjectModal.css";
-import { FaTimes } from "react-icons/fa";
-import { BsGithub } from "react-icons/bs";
+import { FaTimes, FaGithub } from "react-icons/fa";
 import Slider from "react-slick";
 
 export default function ProjectModal({
@@ -12,81 +11,52 @@ export default function ProjectModal({
   githubLink,
   title,
 }) {
-  const carousselSettings = {
-    className: "project-modal-carroussel",
+  const carouselSettings = {
+    className: "project-modal-carousel",
     dots: true,
-    infinite: true,
+    infinite: pictures.length > 1,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    initialSide: 0,
-    arrows: true,
-    autoplaySpeed: 3000,
-    autoplay: true,
-    responsive: [
-      {
-        breakpoint: 1400,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 0,
-          autoplay: true,
-          autoplaySpeed: 4000,
-        },
-      },
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 0,
-          autoplay: true,
-          autoplaySpeed: 5000,
-        },
-      },
-      {
-        breakpoint: 728,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 0,
-          autoplay: true,
-          autoplaySpeed: 6000,
-        },
-      },
-    ],
+    arrows: pictures.length > 1,
+    autoplay: pictures.length > 1,
+    autoplaySpeed: 4000,
   };
+
   return (
     <ReactModal
       isOpen={isOpen}
+      onRequestClose={() => setIsOpen(false)}
+      shouldCloseOnOverlayClick={true}
+      ariaHideApp={false}
       className="project-modal"
       overlayClassName="project-modal-overlay"
+      closeTimeoutMS={200}
     >
-      <div className="project-modal-container">
-        <FaTimes
-          onClick={() => setIsOpen(false)}
-          className="close-btn"
-        />
-        <Slider {...carousselSettings}>
-          {pictures.map((img, index) => {
-            return (
-              <div key={"carroussel " + index} className="img-container">
-                <img src={img} alt="" />
-              </div>
-            );
-          })}
+      <button className="project-modal__close" onClick={() => setIsOpen(false)} aria-label="Close">
+        <FaTimes />
+      </button>
+
+      <div className="project-modal__media">
+        <Slider {...carouselSettings}>
+          {pictures.map((img, index) => (
+            <div key={"slide-" + index} className="project-modal__slide">
+              <img src={img} alt={`${title} screenshot ${index + 1}`} />
+            </div>
+          ))}
         </Slider>
-        <h2>{title}</h2>
-        <p>{description}</p>
-        {githubLink && (
-          <BsGithub
-            style={{ paddingBottom: "25px", fontSize: "60px" }}
-            onClick={() => window.open(githubLink, "_blank")}
-            className="github-btn"
-          />
-        )}
-        {!githubLink && (
-          <p>Sorry the source code for this project isn't public...</p>
+      </div>
+
+      <div className="project-modal__body">
+        <h2 className="project-modal__title">{title}</h2>
+        <p className="project-modal__desc">{description}</p>
+
+        {githubLink ? (
+          <a href={githubLink} target="_blank" rel="noreferrer" className="btn btn-primary">
+            <FaGithub /> View source
+          </a>
+        ) : (
+          <p className="project-modal__note">Sorry, the source code for this project isn't public.</p>
         )}
       </div>
     </ReactModal>

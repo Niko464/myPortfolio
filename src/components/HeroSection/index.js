@@ -1,45 +1,115 @@
 import "../../styles/HeroSection.css";
-import "../../styles/animations.scss";
+import { motion } from "framer-motion";
+import { FaGithub, FaLinkedinIn, FaArrowDown } from "react-icons/fa";
+import MagneticButton from "../MagneticButton";
+import { SITE } from "../../data/site";
+
+const container = {
+  hidden: {},
+  show: { transition: { staggerChildren: 0.12, delayChildren: 0.1 } },
+};
+const item = {
+  hidden: { opacity: 0, y: 24 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] } },
+};
+
+const scrollTo = (e, id) => {
+  e.preventDefault();
+  document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+};
 
 export default function HeroSection() {
-
   return (
-    <section id="home">
-      <div className="fontfam hero-container">
-        <div className="content-container">
-          <p className={"intro-text animate__animated animate__bounceInDown"}>Hi, my name is</p>
-          <p
-            className={"title-text animate__animated animate__zoomInDown"}
-            style={{ color: "var(--clr-title-1)" }}
-          >
-            Nikolaj De Smet.
-          </p>
-          <p
-            className={"title-text animate__animated animate__zoomInDown"}
-            style={{ color: "var(--clr-subtitle-1)" }}
-          >
-            I build what{" "}
-            <span style={{ color: "var(--clr-accent-400)" }}>you</span> want.
-          </p>
-          <p
-            className={"description-text animate__animated animate__bounceInLeft"}
-            style={{ marginTop: "0.5em" }}
-          >
-            I'm a developper interested in lots of topics ranging from web
-            development: front-end and back-end to programming in C,
-            C++, python for machine learning or keeping myself up to date with
-            useful technos like docker.
-          </p>
-          <p className={"description-text animate__animated animate__bounceInRight"}>
-            And even if I don't know the technologies you want me too use, you
-            can still contact me ! Maybe it's time for me to learn it ? Who
-            knows ?
-          </p>
-          <a href="#contact-anchor" className={"cta-btn animate__animated animate__bounceInUp"}>
-            Let's work together
-          </a>
-        </div>
+    <section id="home" className="hero section">
+      <div className="hero__glow" aria-hidden="true" />
+      <div className="container hero__inner">
+        <motion.div
+          className="hero__content"
+          variants={container}
+          initial="hidden"
+          animate="show"
+        >
+          <motion.span className="eyebrow" variants={item}>
+            Hi, my name is
+          </motion.span>
+
+          <motion.h1 className="hero__name" variants={item}>
+            {SITE.name}.
+          </motion.h1>
+
+          <motion.h2 className="hero__headline" variants={item}>
+            I build what <span className="accent">you</span> want.
+          </motion.h2>
+
+          <motion.p className="hero__lead" variants={item}>
+            A developer drawn to a wide range of topics — from front-end and
+            back-end web development to C, C++ and Python for machine learning,
+            and tooling like Docker. Don't see your stack? I'll happily learn it.
+          </motion.p>
+
+          <motion.div className="hero__actions" variants={item}>
+            <MagneticButton
+              href="#contact"
+              onClick={(e) => scrollTo(e, "contact")}
+              className="btn btn-primary"
+            >
+              Let's work together
+            </MagneticButton>
+            <a
+              href="#projects"
+              onClick={(e) => scrollTo(e, "projects")}
+              className="btn btn-ghost"
+            >
+              View my work
+            </a>
+          </motion.div>
+
+          <motion.div className="hero__socials" variants={item}>
+            <a href={SITE.github} target="_blank" rel="noreferrer" aria-label="GitHub">
+              <FaGithub />
+            </a>
+            <a href={SITE.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn">
+              <FaLinkedinIn />
+            </a>
+          </motion.div>
+        </motion.div>
+
+        <motion.div
+          className="hero__card glass"
+          initial={{ opacity: 0, y: 40, rotateX: 8 }}
+          animate={{ opacity: 1, y: 0, rotateX: 0 }}
+          transition={{ duration: 0.9, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
+        >
+          <div className="hero__card-bar">
+            <span /><span /><span />
+            <em>~/nikolaj</em>
+          </div>
+          <pre className="hero__code">
+            <code>
+{`const nikolaj = {
+  role: "Software Developer",
+  trained: "Epitech + Tsinghua",
+  loves: ["AI", "systems", "the web"],
+  languages: ["C", "C++", "Python", "JS"],
+  status: "open to work",
+};`}
+            </code>
+          </pre>
+        </motion.div>
       </div>
+
+      <motion.a
+        href="#about"
+        onClick={(e) => scrollTo(e, "about")}
+        className="hero__scroll"
+        aria-label="Scroll to about"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.4 }}
+      >
+        <span>Scroll</span>
+        <FaArrowDown />
+      </motion.a>
     </section>
   );
 }
