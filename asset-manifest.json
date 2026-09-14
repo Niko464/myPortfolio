@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9310847c.css",
-    "main.js": "/static/js/main.c7f9b14a.js",
+    "main.css": "/static/css/main.4ede1131.css",
+    "main.js": "/static/js/main.521dbc64.js",
     "static/media/RTECH_AI_2.png": "/static/media/RTECH_AI_2.d98bc4305c0d69577f59.png",
     "static/media/GOMOKU_2.png": "/static/media/GOMOKU_2.be21f08d21fa314e760e.png",
     "static/media/RTECH_AI_1.png": "/static/media/RTECH_AI_1.e5dc8744e72bd7d0c170.png",
@@ -35,6 +35,9 @@
     "static/media/RENO_2.png": "/static/media/RENO_2.d2fe10f8356d9621c1e3.png",
     "static/media/PASSWORD_MANAGER_1.png": "/static/media/PASSWORD_MANAGER_1.b3fd3d591b4ad931b86a.png",
     "static/media/CASINO_MINES_VID.mp4": "/static/media/CASINO_MINES_VID.ae06a2234f5c1521c13a.mp4",
+    "static/media/ASCENSION_ECONOMY.png": "/static/media/ASCENSION_ECONOMY.e7b314022beb611a24ff.png",
+    "static/media/ASCENSION_PLAYER.png": "/static/media/ASCENSION_PLAYER.78cfc5f446cc18ccf46c.png",
+    "static/media/ASCENSION_ACTION_LOGS.png": "/static/media/ASCENSION_ACTION_LOGS.56dc1fc291a5c896e0bf.png",
     "static/media/CRYPTO_NOTIF_1.png": "/static/media/CRYPTO_NOTIF_1.d0ea22490fd3146573dd.png",
     "static/media/CRYPTO_NOTIF_2.png": "/static/media/CRYPTO_NOTIF_2.5210b3512824e1a9cda2.png",
     "static/media/NO_PICTUREV1.png": "/static/media/NO_PICTUREV1.59fa71bbbdf9f8394834.png",
@@ -43,11 +46,11 @@
     "static/media/MPR_3.png": "/static/media/MPR_3.b532619dc519ddce6f9c.png",
     "static/media/MPR_1.png": "/static/media/MPR_1.345c411588226eaf058f.png",
     "index.html": "/index.html",
-    "main.9310847c.css.map": "/static/css/main.9310847c.css.map",
-    "main.c7f9b14a.js.map": "/static/js/main.c7f9b14a.js.map"
+    "main.4ede1131.css.map": "/static/css/main.4ede1131.css.map",
+    "main.521dbc64.js.map": "/static/js/main.521dbc64.js.map"
   },
   "entrypoints": [
-    "static/css/main.9310847c.css",
-    "static/js/main.c7f9b14a.js"
+    "static/css/main.4ede1131.css",
+    "static/js/main.521dbc64.js"
   ]
 }
