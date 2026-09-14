@@ -8,9 +8,11 @@ export default function ProjectModal({
   setIsOpen,
   pictures,
   description,
+  highlights,
   githubLink,
   title,
 }) {
+  const paragraphs = Array.isArray(description) ? description : [description];
   const isVideo = (src) => /\.mp4($|\?)/i.test(src);
   const hasVideo = pictures.some(isVideo);
 
@@ -56,7 +58,26 @@ export default function ProjectModal({
 
       <div className="project-modal__body">
         <h2 className="project-modal__title">{title}</h2>
-        <p className="project-modal__desc">{description}</p>
+        <div className="project-modal__desc">
+          {paragraphs.map((p, i) => (
+            <p key={i}>{p}</p>
+          ))}
+        </div>
+
+        {highlights && (
+          <div className="project-modal__highlights">
+            {highlights.map((section) => (
+              <section key={section.title} className="project-modal__section">
+                <h3>{section.title}</h3>
+                <ul>
+                  {section.items.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ul>
+              </section>
+            ))}
+          </div>
+        )}
 
         {githubLink ? (
           <a href={githubLink} target="_blank" rel="noreferrer" className="btn btn-primary">

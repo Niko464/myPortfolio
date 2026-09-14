@@ -18,6 +18,18 @@ const experience = [
     stack: ["React", "TypeScript", "GraphQL", "Node.js", "AWS", "Kubernetes", "Docker", "Linux"],
   },
   {
+    role: "CTO",
+    company: "RLRP",
+    period: "Oct 2025 – Present",
+    current: true,
+    bullets: [
+      "Built the entire Ascension RP project end-to-end — a multiplayer roleplay game on the s&box engine — from gameplay code (C#/.NET) to backend, admin panel and infrastructure.",
+      "Built and maintain the hosting infrastructure for 100 concurrent players: production and staging environments and several dedicated game servers coordinated by one central backend, with monitoring (Prometheus, Grafana) and automated off-site backups.",
+      "Developed the NestJS/PostgreSQL backend (REST + WebSocket) and a React admin panel for player management, staff tools and remote game-server control.",
+    ],
+    stack: ["C#", ".NET", "React", "TypeScript", "NestJS", "PostgreSQL", "Docker", "Linux"],
+  },
+  {
     role: "Fullstack Developer",
     company: "reno.energy",
     kind: "Freelance",
@@ -87,13 +99,17 @@ export default function Experience() {
                     {job.role} <span className="xp__at">·</span>{" "}
                     <span className="xp__company">{job.company}</span>
                   </h3>
-                  <span className="xp__kind">{job.kind}</span>
+                  {job.kind && <span className="xp__kind">{job.kind}</span>}
                   {job.current && <span className="xp__live">Current</span>}
                 </div>
                 <div className="xp__meta">
                   <span>{job.period}</span>
-                  <span className="xp__dot">•</span>
-                  <span>{job.location}</span>
+                  {job.location && (
+                    <>
+                      <span className="xp__dot">•</span>
+                      <span>{job.location}</span>
+                    </>
+                  )}
                 </div>
               </div>
 

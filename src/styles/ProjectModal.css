@@ -92,6 +92,41 @@
   color: var(--text-dim);
   font-size: 0.98rem;
 }
+.project-modal__desc p + p {
+  margin-top: 0.8rem;
+}
+
+.project-modal__highlights {
+  width: 100%;
+  columns: 260px 2;
+  column-gap: 1.75rem;
+}
+.project-modal__section {
+  break-inside: avoid;
+  margin-bottom: 1.25rem;
+}
+.project-modal__section h3 {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-2);
+  margin-bottom: 0.6rem;
+}
+.project-modal__section ul {
+  padding-left: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+.project-modal__section li {
+  color: var(--text-dim);
+  font-size: 0.9rem;
+}
+.project-modal__section li::marker {
+  color: var(--accent-2);
+}
 
 .project-modal__note {
   font-family: var(--font-mono);

@@ -61,6 +61,7 @@ export default function ProjectCard({ project, isOpen, onOpen, onClose }) {
         setIsOpen={(v) => (v ? onOpen() : onClose())}
         pictures={project.presentationImages}
         description={project.longDescription}
+        highlights={project.highlights}
         githubLink={githubLink}
         title={title}
       />

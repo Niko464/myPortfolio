@@ -49,6 +49,9 @@ import CASINO_DICE_VID from "./pictures/CASINO_DICE_VID.mp4";
 import CASINO_MINES_VID from "./pictures/CASINO_MINES_VID.mp4";
 import CASINO_PLINKO_VID from "./pictures/CASINO_PLINKO_VID.mp4";
 import CASINO_SLOT777_VID from "./pictures/CASINO_SLOT_777_VID.mp4";
+import ASCENSION_ECONOMY from "./pictures/ASCENSION_ECONOMY.png";
+import ASCENSION_ACTION_LOGS from "./pictures/ASCENSION_ACTION_LOGS.png";
+import ASCENSION_PLAYER from "./pictures/ASCENSION_PLAYER.png";
 
 const projects = [
   {
@@ -60,6 +63,49 @@ const projects = [
       "As the lead engineer at LiveLinx I lead development of the company's digital learning platform for the medical sector across the whole stack — frontend, backend and infrastructure. Hospitals and clinicians use it to build interactive training content (clinical cases with medical history, ECGs, echocardiography and imaging) and to run live in-person training events powered by the platform. I build and maintain the product with React, TypeScript and GraphQL on AWS, and operate the production infrastructure: a Kubernetes cluster and Linux servers handling deployments, scaling, monitoring and reliability.",
     githubLink: null,
     tags: ["React", "GraphQL", "Kubernetes"],
+    featured: true,
+    client: true,
+  },
+  {
+    title: "Ascension RP",
+    desc: "A multiplayer roleplay game on the s&box engine — gameplay, backend, admin platform and server infrastructure, built as CTO.",
+    previewImg: ASCENSION_ECONOMY,
+    presentationImages: [ASCENSION_ECONOMY, ASCENSION_PLAYER, ASCENSION_ACTION_LOGS],
+    longDescription: [
+      "Ascension RP is a multiplayer roleplay game built on Facepunch's s&box engine for RLRP, where I'm CTO. Players live a persistent life in a shared city — legal jobs, crime, police and politics — with their characters, money and belongings saved across sessions and across servers. I designed and built it end-to-end: the gameplay code, the backend every game server talks to, the staff admin platform and the infrastructure it runs on. It hosts a live community of up to 100 concurrent players.",
+      "The screenshots are from the admin platform: live economy analytics, per-player management with moderation tools, and a searchable audit trail of every in-game action.",
+    ],
+    highlights: [
+      {
+        title: "Gameplay",
+        items: [
+          "Over 200,000 lines of C# (.NET 10) across roughly 250 systems, with Razor UI and a host-authoritative network model where every player action is validated server-side.",
+          "Jobs and progression: police with ranks, warrants and a weapon registry, the mayor, mining, farming and a winery — with skills, quests and crafting.",
+          "Criminal economy: multi-step drug production (weed, cocaine, meth, mushrooms), dealer consignment, and bank and jewelry heists with alarms, cameras and GTA-style planning boards.",
+          "An in-game phone with SMS, photos and a crypto wallet, crypto mining rigs and a 50-coin market whose prices are driven by the backend.",
+          "Player-built properties, organisations, weather and a day/night cycle, and accounts with up to 5 characters — localised in English, French, German and Russian.",
+        ],
+      },
+      {
+        title: "Backend & admin platform",
+        items: [
+          "NestJS + Prisma + PostgreSQL backend with 60+ modules and 80+ data models, serving REST and WebSocket traffic to every game server at once.",
+          "A versioned, backwards-compatible API, so game servers still running older builds keep working through staggered restarts.",
+          "React admin panel (Tailwind, shadcn/ui, TanStack Query): economy analytics, action and game logs, tickets, chat, staff and VIP ranks, whitelist and remote server control.",
+        ],
+      },
+      {
+        title: "Infrastructure",
+        items: [
+          "Production and staging environments plus a fleet of dedicated game servers, provisioned from scripts and controlled remotely by the backend over SSH.",
+          "s&box dedicated servers on Ubuntu (via Wine), Nginx with Let's Encrypt, PostgreSQL in Docker and MinIO for S3-compatible media storage.",
+          "Monitoring with Prometheus and Grafana, error tracking with Sentry, and daily database backups with off-site copies and snapshot protection.",
+          "Hardened services: sandboxed systemd units, fail2ban and least-privilege database access.",
+        ],
+      },
+    ],
+    githubLink: null,
+    tags: ["C#", "NestJS", "React", "DevOps"],
     featured: true,
     client: true,
   },
