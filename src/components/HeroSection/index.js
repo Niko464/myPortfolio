@@ -92,7 +92,7 @@ export default function HeroSection() {
   now: "Lead Engineer @ LiveLinx",
   stack: ["React", "TypeScript", "GraphQL"],
   infra: ["Kubernetes", "Docker", "AWS"],
-  status: "open to freelance",
+  status: "open to freelance & employment",
 };`}
             </code>
           </pre>

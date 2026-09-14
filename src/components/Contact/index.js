@@ -14,11 +14,11 @@ export default function Contact() {
               eyebrow="Contact"
               title="Let's build"
               accent="something."
-              lead="Available for freelance, fully remote. Have a project in mind, or a technology you'd like me to take on? Send a message — I read every one."
+              lead="Available for freelance work and open to employment. Have a project in mind, a role to fill, or a technology you'd like me to take on? Send a message — I read every one."
             />
             <Reveal className="contact__availability" delay={0.08}>
               <span className="contact__dot" />
-              Available for freelance · Fully remote
+              Available for freelance · Open to employment
             </Reveal>
             <Reveal className="contact__email" delay={0.1}>
               <a href={`mailto:${SITE.email}`}>
